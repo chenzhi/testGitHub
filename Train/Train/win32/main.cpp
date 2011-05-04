@@ -12,11 +12,13 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 
     // create the application instance
 
-	//WCHAR pBuffer[1024];
-	//ZeroMemory(pBuffer, 1024);
-	//::GetModuleFileName(NULL, pBuffer, 1024);
-	//::SetCurrentDirectory(pBuffer);
+#ifdef WIN32
+	WCHAR pBuffer[1024];
+	ZeroMemory(pBuffer, 1024);
+	::GetModuleFileName(NULL, pBuffer, 1024);
+	::SetCurrentDirectory(pBuffer);
 
+#endif
 
 
     AppDelegate app;
