@@ -99,7 +99,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="xcopy /E /Q /Y &quot;$(ProjectDir)Resource\*.*&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;xcopy &quot;$(cocos2d)\Debug.win32\*.dll&quot; &quot;$(OutDir)&quot;"
+				CommandLine="xcopy /E /Q /Y &quot;$(ProjectDir)Resource\*.*&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;xcopy &quot;$(cocos2d)\Debug.win32\*.dll&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -201,10 +201,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\Classes\HelloWorldScene.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\win32\main.cpp"
 				>
 			</File>
@@ -219,10 +215,6 @@
 			</File>
 			<File
 				RelativePath=".\Classes\Config.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Classes\HelloWorldScene.h"
 				>
 			</File>
 			<File
@@ -260,6 +252,26 @@
 			</File>
 			<File
 				RelativePath=".\Resource\TransType.png"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="class"
+			>
+			<File
+				RelativePath=".\Classes\HelloWorldScene.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\HelloWorldScene.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\RailType.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\RailType.h"
 				>
 			</File>
 		</Filter>

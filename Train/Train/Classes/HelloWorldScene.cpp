@@ -36,6 +36,85 @@ bool HelloWorld::init()
 	if(pMap==NULL)
 		return false;
 
+
+	CCTMXLayer* pLayerBack=pMap->layerNamed("BackGround");
+	if(pLayerBack!=NULL)
+	{
+		CCTMXTilesetInfo* pTitlesInofo=pLayerBack->getTileSet();
+		if(pTitlesInofo!=NULL)
+		{
+			int rowCount=pTitlesInofo->m_tTileSize.width;
+			int columnCount=pTitlesInofo->m_tTileSize.height;
+
+			rowCount=pLayerBack->getLayerSize().width;
+			columnCount=pLayerBack->getLayerSize().height;
+
+			for(int i=0;i<columnCount;++i)
+			{
+				for(int j=0;j<rowCount;++j)
+				{
+					CCSprite* pSprite=pLayerBack->tileAt(CCPoint(j,i));
+					if(pSprite!=NULL)
+					{
+
+						ccV3F_C4B_T2F_Quad Quad=pSprite->getQuad();
+					    float u= Quad.bl.texCoords.u;
+						float v= Quad.bl.texCoords.v;
+
+						int m=0;
+						++m;
+							 
+						 
+					}else
+					{
+						int cc=0;
+						cc++;
+					}
+
+
+				}
+			}
+
+
+			
+		}
+
+
+	}
+
+	CCTMXObjectGroup* pTrainTypeGroup=pMap->groupNamed("TrainsType");
+	if(pTrainTypeGroup!=NULL)
+	{
+
+
+		CCMutableArray<CCStringToStringDictionary*>* pObjects=pTrainTypeGroup->getObjects();
+	    int count=pObjects->count();
+		for(int i=0;i<count;++i)
+		{
+			CCStringToStringDictionary* pDic=pObjects->getObjectAtIndex(i);
+			if(pDic!=NULL)
+			{
+
+				std::string	key;
+				CCString* pValue;
+				pDic->begin();
+				pValue=pDic->next(&key);
+				while(pValue!=NULL)
+				{
+					pValue=pDic->next(&key);
+
+					std::string v=pValue->m_sString;
+
+				}
+			}
+
+
+		}
+
+	}
+
+
+
 	this->addChild(pMap);
 
 
