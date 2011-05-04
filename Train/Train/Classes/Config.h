@@ -6,6 +6,7 @@
 #ifdef WIN32
 const std::string g_ResourcePath="../Train/Resource";
 
+
 #endif
 
 
