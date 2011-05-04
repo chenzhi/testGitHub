@@ -101,11 +101,53 @@ bool HelloWorld::init()
 				pValue=pDic->next(&key);
 				while(pValue!=NULL)
 				{
+					std::string v=pValue->m_sString;
 					pValue=pDic->next(&key);
 
-					std::string v=pValue->m_sString;
+				}
+
+				char KeyValue[256];
+				int keyindex=0;
+				while(true)
+				{
+                  sprintf(KeyValue,"input%d",keyindex);
+				  CCString*pstrValue= pDic->objectForKey(KeyValue);
+				 
+				  if(pstrValue==NULL)
+				  {
+					  break;
+				  }
+
+				  const char* ptemValue=pstrValue->m_sString.c_str();
+				  float x,y;
+				  sscanf(ptemValue,"x:%f y:%f",&x,&y);
+
+
+				   ++keyindex;
 
 				}
+
+				while(true)
+				{
+					sprintf(KeyValue,"output%d",keyindex);
+					CCString*pstrValue= pDic->objectForKey(KeyValue);
+
+					if(pstrValue==NULL)
+					{
+						break;
+					}
+
+					const char* ptemValue=pstrValue->m_sString.c_str();
+					float x,y;
+					sscanf(ptemValue,"x:%f y:%f",&x,&y);
+
+					++keyindex;
+
+				}
+				
+
+
+
 			}
 
 
