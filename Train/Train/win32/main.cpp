@@ -1,5 +1,5 @@
+#include "pch.h"
 #include "main.h"
-
 #include "AppDelegate.h"
 
 int APIENTRY _tWinMain(HINSTANCE hInstance,
