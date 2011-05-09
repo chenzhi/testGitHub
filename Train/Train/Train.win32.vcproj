@@ -53,7 +53,8 @@
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
-				UsePrecompiledHeader="0"
+				UsePrecompiledHeader="2"
+				PrecompiledHeaderThrough="pch.h"
 				WarningLevel="3"
 				DebugInformationFormat="4"
 				DisableSpecificWarnings="4251"
@@ -99,7 +100,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="xcopy /E /Q /Y &quot;$(ProjectDir)Resource\*.*&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;xcopy &quot;$(cocos2d)\Debug.win32\*.dll&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;"
+				CommandLine="&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -185,7 +186,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Performing copy resource from Resource to OutDir..."
-				CommandLine="xcopy /E /Q /Y &quot;$(ProjectDir)Resource\*.*&quot; &quot;$(OutDir)&quot;"
+				CommandLine="xcopy /E /Q /Y &quot;$(ProjectDir)Resource\*.*&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;xcopy &quot;$(cocos2d)\Debug.win32\*.dll&quot; &quot;$(OutDir)&quot;"
 			/>
 		</Configuration>
 	</Configurations>
@@ -197,10 +198,6 @@
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm"
 			>
 			<File
-				RelativePath=".\Classes\AppDelegate.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\win32\main.cpp"
 				>
 			</File>
@@ -210,15 +207,27 @@
 			Filter="h;hpp;hxx;hm;inl;inc"
 			>
 			<File
-				RelativePath=".\Classes\AppDelegate.h"
-				>
-			</File>
-			<File
 				RelativePath=".\Classes\Config.h"
 				>
 			</File>
 			<File
 				RelativePath=".\win32\main.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\pch.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\Classes\pch.h"
 				>
 			</File>
 			<File
@@ -259,6 +268,14 @@
 			Name="class"
 			>
 			<File
+				RelativePath=".\Classes\AppDelegate.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\AppDelegate.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Classes\HelloWorldScene.cpp"
 				>
 			</File>
@@ -267,11 +284,35 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Classes\RailLine.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\RailLine.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\RailMap.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\RailMap.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Classes\RailType.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\Classes\RailType.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="tools"
+			>
+			<File
+				RelativePath=".\Classes\Singleton.h"
 				>
 			</File>
 		</Filter>

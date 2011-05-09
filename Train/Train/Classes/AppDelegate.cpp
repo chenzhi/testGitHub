@@ -1,7 +1,6 @@
-#include "cocos2d.h"
+#include "pch.h"
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
-
 
 using namespace cocos2d;
 

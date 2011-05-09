@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="5" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="TransType" tilewidth="64" tileheight="64">
+  <image source="TransType.png" width="384" height="256"/>
+ </tileset>
+ <tileset firstgid="25" name="HelloWorld" tilewidth="64" tileheight="64">
+  <image source="HelloWorld.png" width="480" height="320"/>
+ </tileset>
+ <layer name="BackGround" width="15" height="5">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGBjADsSMQMwExMxQPjJmAWJWIGbDwocBESAWxWKOGBCLA7EgEAsh8XEBmDkwu3GpBwDQ2wG3LAEAAA==
+  </data>
+ </layer>
+ <objectgroup name="TrainsType" width="15" height="5" visible="0">
+  <object name="Rail" gid="1" x="0" y="64">
+   <properties>
+    <property name="input0" value="x:0.0 y:0.5"/>
+    <property name="output0" value="x:1.0 y:0.5"/>
+    <property name="output1" value="x:1.0 y:0.3"/>
+   </properties>
+  </object>
+  <object gid="2" x="64" y="64">
+   <properties>
+    <property name="input0" value="x:0.5 y:0.5"/>
+    <property name="output0" value="x:1.0 y:0.5"/>
+    <property name="output1" value="x:0.6 y:0.0"/>
+   </properties>
+  </object>
+  <object gid="3" x="128" y="64">
+   <properties>
+    <property name="input0" value="x:0.0 y:0.5"/>
+    <property name="output0" value="x:1.0 y:0.5"/>
+   </properties>
+  </object>
+  <object gid="4" x="191" y="64"/>
+  <object gid="5" x="255" y="64"/>
+  <object gid="6" x="319" y="64"/>
+  <object gid="7" x="0" y="128"/>
+  <object gid="8" x="64" y="128"/>
+  <object gid="9" x="128" y="128"/>
+  <object gid="10" x="192" y="128"/>
+  <object gid="11" x="256" y="128"/>
+  <object gid="12" x="320" y="128"/>
+  <object gid="13" x="0" y="192"/>
+  <object gid="14" x="65" y="192"/>
+  <object gid="20" x="64" y="256"/>
+  <object gid="14" x="128" y="192"/>
+  <object gid="21" x="128" y="256"/>
+  <object gid="22" x="192" y="256"/>
+  <object gid="17" x="256" y="192"/>
+  <object gid="16" x="193" y="192"/>
+  <object gid="18" x="320" y="192"/>
+  <object gid="23" x="256" y="256"/>
+ </objectgroup>
+</map>
