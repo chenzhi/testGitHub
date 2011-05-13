@@ -18,4 +18,7 @@ const std::string g_ResourcePath="../Train/Resource";
 
 
 
+
+
+
 #endif
