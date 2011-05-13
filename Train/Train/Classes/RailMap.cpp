@@ -8,12 +8,17 @@ RailMap* Singleton<RailMap>::ms_Singleton=NULL;
 
 cocos2d::CCPoint	RailMap::m_ConectArea(5.0f,5.0f);
 
-RailMap::RailMap()
+RailMap::RailMap(cocos2d::CCLayer* pLayer)
+:m_pLayer(pLayer)
 {
+	m_pLayer->retain();
 }
 
 RailMap::~RailMap()
 {
+	
+
+	m_pLayer->release();
 
 	destroyAllRailLine();
 }
@@ -26,20 +31,25 @@ bool RailMap::addRailLine(const std::string& name,const cocos2d::CCPoint& headPo
 		return false;
 
 	RailLine* pRailLine=new RailLine(name,headPoint,trailPoint);
+	m_pLayer->addChild(pRailLine);
 
 	RailLineVector::iterator itBegin=m_RailLineVector.begin();
 	RailLineVector::iterator itEnd=m_RailLineVector.end();
 	for(;itBegin!=itEnd;++itBegin)
 	{
 		cocos2d::CCPoint temHeadPoint=(*itBegin)->getHeadPoint();
-		cocos2d::CCPoint temTrailPoint=(*itBegin)->getHeadPoint();
+		cocos2d::CCPoint temTrailPoint=(*itBegin)->getTrailPoint();
 
 		if(isInConectArea(temHeadPoint,trailPoint))
 		{
+			pRailLine->addTrailLine(*itBegin,false);
+			//(*itBegin)->addHeadLine(pRailLine,true	);
 
 
 		}else if(isInConectArea(temTrailPoint,headPoint))
 		{
+			pRailLine->addHeadLine(*itBegin,false);
+			//(*itBegin)->addTrailLine(pRailLine,false);
 
 		}
 
@@ -47,6 +57,7 @@ bool RailMap::addRailLine(const std::string& name,const cocos2d::CCPoint& headPo
 
 	}
 
+	 m_RailLineVector.push_back(pRailLine);
 
 
 	return true;
@@ -63,7 +74,7 @@ RailLine* RailMap::getRailLineByName(const std::string& name)const
 		if((*itBegin)->getName()==name)
 			return *itBegin;
 	}
-	return *itBegin;
+	return NULL;
 }
 
 
@@ -74,6 +85,7 @@ void RailMap::destroyAllRailLine()
 
 	for(;itBegin!=itEnd;++itBegin)
 	{
+	    m_pLayer->removeChild(*itBegin,false);
 	   delete *itBegin;
 	}
 	m_RailLineVector.clear();

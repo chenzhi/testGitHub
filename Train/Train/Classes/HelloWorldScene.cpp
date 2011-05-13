@@ -1,9 +1,25 @@
 #include "pch.h"
 #include "HelloWorldScene.h"
 #include "Config.h"
+#include "Train.h"
+#include "RailLine.h"
+#include "RailMap.h"
 
 
 using namespace cocos2d;
+
+
+HelloWorld::HelloWorld()
+:m_pRailMap(NULL),m_pTrain(NULL)
+{
+
+}
+
+
+HelloWorld::~HelloWorld()
+{
+ destroyRailManager();
+}
 
 
 CCScene* HelloWorld::scene()
@@ -30,12 +46,15 @@ CCScene* HelloWorld::scene()
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
+	__super::init();
     bool bRet = true;
   
 
 	CCTMXTiledMap *pMap=CCTMXTiledMap::tiledMapWithTMXFile("TrainType.tmx");
 	if(pMap==NULL)
 		return false;
+
+
 
 
 	CCTMXLayer* pLayerBack=pMap->layerNamed("BackGround");
@@ -161,6 +180,8 @@ bool HelloWorld::init()
 	this->addChild(pMap);
 
 
+	initRailManger();
+
 
     return bRet;
 }
@@ -171,3 +192,46 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
     CCDirector::sharedDirector()->end();
 }
 
+
+void HelloWorld::initRailManger()
+{
+	m_pRailMap=new RailMap(this);
+	int index=0;
+
+   m_pTrain = new Train(this);
+
+	m_pRailMap->addRailLine("first",cocos2d::CCPoint(0.0f,200.0f),cocos2d::CCPoint(100.0f,200));
+	m_pRailMap->addRailLine("second",cocos2d::CCPoint(100.0f,200.0f),cocos2d::CCPoint(200.0f,100.0f));
+
+
+	RailLine* pLine=m_pRailMap->getRailLineByName("first");
+	m_pTrain->setCurrentRailLine(pLine);
+	this->schedule((SEL_SCHEDULE)&HelloWorld::update);
+
+	return ;
+
+}
+
+void HelloWorld::destroyRailManager()
+{
+	if(m_pRailMap!=NULL)
+	{
+		delete m_pRailMap;
+		m_pRailMap=NULL;
+	}
+
+	if(m_pTrain!=NULL)
+	{
+		delete m_pTrain;
+		m_pTrain=NULL;
+	}
+	this->unschedule((SEL_SCHEDULE)&HelloWorld::update);
+
+}
+
+void  HelloWorld::update(cocos2d::ccTime dt)
+{
+	if(m_pTrain!=NULL)
+		m_pTrain->update(dt);
+
+}

@@ -186,7 +186,7 @@
 			<Tool
 				Name="VCPostBuildEventTool"
 				Description="Performing copy resource from Resource to OutDir..."
-				CommandLine="xcopy /E /Q /Y &quot;$(ProjectDir)Resource\*.*&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;xcopy &quot;$(cocos2d)\Debug.win32\*.dll&quot; &quot;$(OutDir)&quot;"
+				CommandLine="xcopy /E /Q /Y &quot;$(ProjectDir)Resource\*.*&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;xcopy &quot;$(cocos2d)\Debug.win32\*.dll&quot; &quot;$(OutDir)&quot;&#x0D;&#x0A;"
 			/>
 		</Configuration>
 	</Configurations>
@@ -307,12 +307,28 @@
 				RelativePath=".\Classes\RailType.h"
 				>
 			</File>
+			<File
+				RelativePath=".\Classes\Train.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\Train.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="tools"
 			>
 			<File
 				RelativePath=".\Classes\Singleton.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\Tools.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\Tools.h"
 				>
 			</File>
 		</Filter>

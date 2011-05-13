@@ -11,7 +11,7 @@ class RailMap :public Singleton<RailMap>
 {
 public:
 
-	RailMap();
+	RailMap(cocos2d::CCLayer* pLayer);
 
 	~RailMap();
 
@@ -45,6 +45,10 @@ protected:
 
 	///用来判断线段相连的误差范围
 	static cocos2d::CCPoint m_ConectArea;
+
+
+	cocos2d::CCLayer* m_pLayer;
+
 
 };
 

@@ -8,6 +8,9 @@
 
 #include "Singleton.h"
 
+
+#include "gles/egl.h"
+
 #endif
 
 

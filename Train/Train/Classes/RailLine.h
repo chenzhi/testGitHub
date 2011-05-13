@@ -11,13 +11,15 @@
 class RailLine;
 typedef std::vector<RailLine*> RailLineVector;
 
-class RailLine
+class RailLine  :public cocos2d::CCNode
 {
 
 	friend class RailMap;
 
 	
 protected:
+
+	public:
 
 	RailLine(const std::string& name,const cocos2d::CCPoint&head ,const cocos2d::CCPoint& trail );
 
@@ -35,6 +37,13 @@ public:
 
 	unsigned int     getTrailLineCount()const {return m_TrailRailVector.size();}
 
+
+	/**获取尾部连接的线
+	*@return 没有找到近回空
+	*/
+	RailLine*        getOpenTrailLine()const ;
+
+	RailLine*        getOpenHeadLine()const ;
 
 	/**首尾部加入一个联接线段,联接线段的首尾必须与本线段首尾有一个位置相同
 	*@param bool head true表示pline的头部加入到当前线段的尾部否
@@ -67,6 +76,12 @@ public:
     
 	void             turnTrailLine();
 
+	cocos2d::CCPoint  getPointByPercent(float percent) const ;
+
+
+protected:
+	/**画线*/
+	virtual void draw(void);
 
 	
 

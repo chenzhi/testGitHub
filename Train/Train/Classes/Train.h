@@ -3,20 +3,47 @@
 
 
 
+enum MoveDir
+{
+
+};
+
+
+class RailLine;
 class Train
 {
 public:
 
-	Train();
+	Train(cocos2d::CCLayer* pLayer);
 
 	
 	~Train();
+
+
+	void setPosition(const cocos2d::CCPoint& point);
+
+
+	void update(float time);
+
+	void setCurrentRailLine(RailLine* pLine);
+
+
+
+protected:
+
+	/**µ÷Õû³¯Ïò*/
+	void updateOrientate();
 
 
 
 protected:
 
 	cocos2d::CCSprite* m_pSprite;
+
+	RailLine*   m_pCurrentRailLine;
+
+	float      m_LinePercent;
+
 
 
 
