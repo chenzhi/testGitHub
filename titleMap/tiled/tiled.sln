@@ -1,0 +1,63 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "phony_target", "D:/work/titleMap/tiled/translations\phony_target.vcproj", "{1DE58092-ABB9-36C3-992F-FA690204E0E0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiled", "D:/work/titleMap/tiled/src/libtiled\tiled.vcproj", "{9C268BC2-943F-39F6-8E5F-9019253545F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiled", "D:/work/titleMap/tiled/src/tiled\tiled.vcproj", "{76E77C38-B392-3F16-8DE4-17B347C0FBD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tmxviewer", "D:/work/titleMap/tiled/src/tmxviewer\tmxviewer.vcproj", "{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "droidcraft", "D:/work/titleMap/tiled/src/plugins/droidcraft\droidcraft.vcproj", "{AC1FBB49-8027-3FF1-8830-75057519B50C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tmw", "D:/work/titleMap/tiled/src/plugins/tmw\tmw.vcproj", "{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tengine", "D:/work/titleMap/tiled/src/plugins/tengine\tengine.vcproj", "{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug|Win32
+		ConfigName.1 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{76E77C38-B392-3F16-8DE4-17B347C0FBD2}.0 = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+		{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}.0 = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.0 = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.0 = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.0 = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1DE58092-ABB9-36C3-992F-FA690204E0E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1DE58092-ABB9-36C3-992F-FA690204E0E0}.Debug|Win32.Build.0 = Debug|Win32
+		{1DE58092-ABB9-36C3-992F-FA690204E0E0}.Release|Win32.ActiveCfg = Release|Win32
+		{1DE58092-ABB9-36C3-992F-FA690204E0E0}.Release|Win32.Build.0 = Release|Win32
+		{9C268BC2-943F-39F6-8E5F-9019253545F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9C268BC2-943F-39F6-8E5F-9019253545F2}.Debug|Win32.Build.0 = Debug|Win32
+		{9C268BC2-943F-39F6-8E5F-9019253545F2}.Release|Win32.ActiveCfg = Release|Win32
+		{9C268BC2-943F-39F6-8E5F-9019253545F2}.Release|Win32.Build.0 = Release|Win32
+		{76E77C38-B392-3F16-8DE4-17B347C0FBD2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76E77C38-B392-3F16-8DE4-17B347C0FBD2}.Debug|Win32.Build.0 = Debug|Win32
+		{76E77C38-B392-3F16-8DE4-17B347C0FBD2}.Release|Win32.ActiveCfg = Release|Win32
+		{76E77C38-B392-3F16-8DE4-17B347C0FBD2}.Release|Win32.Build.0 = Release|Win32
+		{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}.Debug|Win32.Build.0 = Debug|Win32
+		{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}.Release|Win32.ActiveCfg = Release|Win32
+		{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}.Release|Win32.Build.0 = Release|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Debug|Win32.Build.0 = Debug|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Release|Win32.ActiveCfg = Release|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Release|Win32.Build.0 = Release|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Debug|Win32.Build.0 = Debug|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Release|Win32.ActiveCfg = Release|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Release|Win32.Build.0 = Release|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Debug|Win32.Build.0 = Debug|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Release|Win32.ActiveCfg = Release|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "droidcraft", "D:/work/titleMap/tiled/src/plugins/droidcraft\droidcraft.vcproj", "{AC1FBB49-8027-3FF1-8830-75057519B50C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tmw", "D:/work/titleMap/tiled/src/plugins/tmw\tmw.vcproj", "{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tengine", "D:/work/titleMap/tiled/src/plugins/tengine\tengine.vcproj", "{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug|Win32
+		ConfigName.1 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Debug|Win32.Build.0 = Debug|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Release|Win32.ActiveCfg = Release|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Release|Win32.Build.0 = Release|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Debug|Win32.Build.0 = Debug|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Release|Win32.ActiveCfg = Release|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Release|Win32.Build.0 = Release|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Debug|Win32.Build.0 = Debug|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Release|Win32.ActiveCfg = Release|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,64 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtiled", "libtiled\libtiled.vcproj", "{9C268BC2-943F-39F6-8E5F-9019253545F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiled", "tiled\tiled.vcproj", "{76E77C38-B392-3F16-8DE4-17B347C0FBD2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C268BC2-943F-39F6-8E5F-9019253545F2} = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tmxviewer", "tmxviewer\tmxviewer.vcproj", "{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C268BC2-943F-39F6-8E5F-9019253545F2} = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "droidcraft", "plugins\droidcraft\droidcraft.vcproj", "{AC1FBB49-8027-3FF1-8830-75057519B50C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C268BC2-943F-39F6-8E5F-9019253545F2} = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tmw", "plugins\tmw\tmw.vcproj", "{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C268BC2-943F-39F6-8E5F-9019253545F2} = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tengine", "plugins\tengine\tengine.vcproj", "{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C268BC2-943F-39F6-8E5F-9019253545F2} = {9C268BC2-943F-39F6-8E5F-9019253545F2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C268BC2-943F-39F6-8E5F-9019253545F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9C268BC2-943F-39F6-8E5F-9019253545F2}.Debug|Win32.Build.0 = Debug|Win32
+		{9C268BC2-943F-39F6-8E5F-9019253545F2}.Release|Win32.ActiveCfg = Release|Win32
+		{9C268BC2-943F-39F6-8E5F-9019253545F2}.Release|Win32.Build.0 = Release|Win32
+		{76E77C38-B392-3F16-8DE4-17B347C0FBD2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76E77C38-B392-3F16-8DE4-17B347C0FBD2}.Debug|Win32.Build.0 = Debug|Win32
+		{76E77C38-B392-3F16-8DE4-17B347C0FBD2}.Release|Win32.ActiveCfg = Release|Win32
+		{76E77C38-B392-3F16-8DE4-17B347C0FBD2}.Release|Win32.Build.0 = Release|Win32
+		{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}.Debug|Win32.Build.0 = Debug|Win32
+		{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}.Release|Win32.ActiveCfg = Release|Win32
+		{C4CECE5B-B1D5-3A9E-99BA-58ED8F2F2B67}.Release|Win32.Build.0 = Release|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Debug|Win32.Build.0 = Debug|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Release|Win32.ActiveCfg = Release|Win32
+		{AC1FBB49-8027-3FF1-8830-75057519B50C}.Release|Win32.Build.0 = Release|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Debug|Win32.Build.0 = Debug|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Release|Win32.ActiveCfg = Release|Win32
+		{DE37C537-FC6E-3EC9-87CC-40AD3E43A047}.Release|Win32.Build.0 = Release|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Debug|Win32.Build.0 = Debug|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Release|Win32.ActiveCfg = Release|Win32
+		{EAFA62DC-FF60-3EFF-8D22-1DFDDF38D8A2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

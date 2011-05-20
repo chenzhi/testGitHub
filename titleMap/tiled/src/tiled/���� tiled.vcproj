@@ -1,0 +1,2434 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="tiled"
+	ProjectGUID="{76E77C38-B392-3F16-8DE4-17B347C0FBD2}"
+	Keyword="Qt4VSv1.0"
+	TargetFrameworkVersion="0"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			IntermediateDirectory=".obj\"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				Optimization="4"
+				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\QtCore&quot;,&quot;$(QTDIR)\include\QtGui&quot;,&quot;$(QTDIR)\include\QtOpenGL&quot;,&quot;$(QTDIR)\include&quot;,&quot;..\libtiled&quot;,&quot;.&quot;,&quot;$(QTDIR)\include\ActiveQt&quot;,&quot;.moc&quot;,&quot;.uic&quot;,c:\Qt\4.7.3\mkspecs\win32-msvc2008"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_NO_CAST_FROM_ASCII,QT_NO_CAST_TO_ASCII,QT_DLL,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="1"
+				RuntimeLibrary="3"
+				BufferSecurityCheck="false"
+				TreatWChar_tAsBuiltInType="false"
+				RuntimeTypeInfo="true"
+				AssemblerListingLocation=".obj\"
+				ObjectFile=".obj\"
+				ProgramDataBaseFileName=".\"
+				WarningLevel="3"
+				SuppressStartupBanner="true"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_NO_CAST_FROM_ASCII,QT_NO_CAST_TO_ASCII,QT_DLL,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,_DEBUG"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				AdditionalDependencies="glu32.lib opengl32.lib gdi32.lib user32.lib $(QTDIR)\lib\qtmaind.lib tiled.lib $(QTDIR)\lib\QtOpenGLd4.lib $(QTDIR)\lib\QtGuid4.lib $(QTDIR)\lib\QtCored4.lib"
+				OutputFile="..\..\tiled.exe"
+				SuppressStartupBanner="true"
+				AdditionalLibraryDirectories="$(QTDIR)\lib,D:/work/titleMap/tiled/src/tiled/../../lib"
+				GenerateDebugInformation="true"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				LinkTimeCodeGeneration="0"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			IntermediateDirectory=".obj\"
+			ConfigurationType="1"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				Optimization="2"
+				AdditionalIncludeDirectories="&quot;$(QTDIR)\include\QtCore&quot;,&quot;$(QTDIR)\include\QtGui&quot;,&quot;$(QTDIR)\include\QtOpenGL&quot;,&quot;$(QTDIR)\include&quot;,&quot;..\libtiled&quot;,&quot;.&quot;,&quot;$(QTDIR)\include\ActiveQt&quot;,&quot;.moc&quot;,&quot;.uic&quot;,c:\Qt\4.7.3\mkspecs\win32-msvc2008"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_NO_CAST_FROM_ASCII,QT_NO_CAST_TO_ASCII,QT_DLL,QT_NO_DEBUG,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="1"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="false"
+				TreatWChar_tAsBuiltInType="false"
+				RuntimeTypeInfo="true"
+				AssemblerListingLocation=".obj\"
+				ObjectFile=".obj\"
+				ProgramDataBaseFileName=".\"
+				WarningLevel="3"
+				SuppressStartupBanner="true"
+				DebugInformationFormat="0"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_NO_CAST_FROM_ASCII,QT_NO_CAST_TO_ASCII,QT_DLL,QT_NO_DEBUG,QT_OPENGL_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="true"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				AdditionalDependencies="glu32.lib opengl32.lib gdi32.lib user32.lib $(QTDIR)\lib\qtmain.lib tiled.lib $(QTDIR)\lib\QtOpenGL4.lib $(QTDIR)\lib\QtGui4.lib $(QTDIR)\lib\QtCore4.lib"
+				OutputFile="..\..\tiled.exe"
+				LinkIncremental="1"
+				SuppressStartupBanner="true"
+				AdditionalLibraryDirectories="$(QTDIR)\lib,D:/work/titleMap/tiled/src/tiled/../../lib"
+				GenerateDebugInformation="false"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				LinkTimeCodeGeneration="0"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath="aboutdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="abstracttiletool.cpp"
+				>
+			</File>
+			<File
+				RelativePath="abstracttool.cpp"
+				>
+			</File>
+			<File
+				RelativePath="addremovelayer.cpp"
+				>
+			</File>
+			<File
+				RelativePath="addremovemapobject.cpp"
+				>
+			</File>
+			<File
+				RelativePath="addremovetileset.cpp"
+				>
+			</File>
+			<File
+				RelativePath="automap.cpp"
+				>
+			</File>
+			<File
+				RelativePath="brushitem.cpp"
+				>
+			</File>
+			<File
+				RelativePath="bucketfilltool.cpp"
+				>
+			</File>
+			<File
+				RelativePath="changemapobject.cpp"
+				>
+			</File>
+			<File
+				RelativePath="changeobjectgroupproperties.cpp"
+				>
+			</File>
+			<File
+				RelativePath="changeproperties.cpp"
+				>
+			</File>
+			<File
+				RelativePath="changetileselection.cpp"
+				>
+			</File>
+			<File
+				RelativePath="clipboardmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath="colorbutton.cpp"
+				>
+			</File>
+			<File
+				RelativePath="command.cpp"
+				>
+			</File>
+			<File
+				RelativePath="commandbutton.cpp"
+				>
+			</File>
+			<File
+				RelativePath="commanddatamodel.cpp"
+				>
+			</File>
+			<File
+				RelativePath="commanddialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="createobjecttool.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\createpathTool.cpp"
+				>
+			</File>
+			<File
+				RelativePath="documentmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath="eraser.cpp"
+				>
+			</File>
+			<File
+				RelativePath="erasetiles.cpp"
+				>
+			</File>
+			<File
+				RelativePath="filltiles.cpp"
+				>
+			</File>
+			<File
+				RelativePath="languagemanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath="layerdock.cpp"
+				>
+			</File>
+			<File
+				RelativePath="layermodel.cpp"
+				>
+			</File>
+			<File
+				RelativePath="main.cpp"
+				>
+			</File>
+			<File
+				RelativePath="mainwindow.cpp"
+				>
+			</File>
+			<File
+				RelativePath="mapdocument.cpp"
+				>
+			</File>
+			<File
+				RelativePath="mapdocumentactionhandler.cpp"
+				>
+			</File>
+			<File
+				RelativePath="mapobjectitem.cpp"
+				>
+			</File>
+			<File
+				RelativePath="mapscene.cpp"
+				>
+			</File>
+			<File
+				RelativePath="mapview.cpp"
+				>
+			</File>
+			<File
+				RelativePath="movelayer.cpp"
+				>
+			</File>
+			<File
+				RelativePath="movemapobject.cpp"
+				>
+			</File>
+			<File
+				RelativePath="movemapobjecttogroup.cpp"
+				>
+			</File>
+			<File
+				RelativePath="movetileset.cpp"
+				>
+			</File>
+			<File
+				RelativePath="newmapdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="newtilesetdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="objectgroupitem.cpp"
+				>
+			</File>
+			<File
+				RelativePath="objectgrouppropertiesdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="objectpropertiesdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="objectselectiontool.cpp"
+				>
+			</File>
+			<File
+				RelativePath="offsetlayer.cpp"
+				>
+			</File>
+			<File
+				RelativePath="offsetmapdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="painttilelayer.cpp"
+				>
+			</File>
+			<File
+				RelativePath="pluginmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath="preferences.cpp"
+				>
+			</File>
+			<File
+				RelativePath="preferencesdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="propertiesdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="propertiesmodel.cpp"
+				>
+			</File>
+			<File
+				RelativePath="propertiesview.cpp"
+				>
+			</File>
+			<File
+				RelativePath="quickstampmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath="renamelayer.cpp"
+				>
+			</File>
+			<File
+				RelativePath="resizedialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="resizehelper.cpp"
+				>
+			</File>
+			<File
+				RelativePath="resizelayer.cpp"
+				>
+			</File>
+			<File
+				RelativePath="resizemap.cpp"
+				>
+			</File>
+			<File
+				RelativePath="resizemapobject.cpp"
+				>
+			</File>
+			<File
+				RelativePath="saveasimagedialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath="selectiontool.cpp"
+				>
+			</File>
+			<File
+				RelativePath="stampbrush.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tiledapplication.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tilelayeritem.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tilepainter.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tileselectionitem.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tilesetdock.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tilesetmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tilesetmodel.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tilesetview.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tmxmapreader.cpp"
+				>
+			</File>
+			<File
+				RelativePath="tmxmapwriter.cpp"
+				>
+			</File>
+			<File
+				RelativePath="toolmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath="undodock.cpp"
+				>
+			</File>
+			<File
+				RelativePath="utils.cpp"
+				>
+			</File>
+			<File
+				RelativePath="zoomable.cpp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath="aboutdialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC aboutdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 aboutdialog.h -o .moc\moc_aboutdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;aboutdialog.h"
+						Outputs=".moc\moc_aboutdialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC aboutdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 aboutdialog.h -o .moc\moc_aboutdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;aboutdialog.h"
+						Outputs=".moc\moc_aboutdialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="abstracttiletool.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC abstracttiletool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 abstracttiletool.h -o .moc\moc_abstracttiletool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;abstracttiletool.h"
+						Outputs=".moc\moc_abstracttiletool.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC abstracttiletool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 abstracttiletool.h -o .moc\moc_abstracttiletool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;abstracttiletool.h"
+						Outputs=".moc\moc_abstracttiletool.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="abstracttool.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC abstracttool.h"
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 abstracttool.h -o .moc\moc_abstracttool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;abstracttool.h"
+						Outputs=".moc\moc_abstracttool.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC abstracttool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 abstracttool.h -o .moc\moc_abstracttool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;abstracttool.h"
+						Outputs=".moc\moc_abstracttool.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="addremovelayer.h"
+				>
+			</File>
+			<File
+				RelativePath="addremovemapobject.h"
+				>
+			</File>
+			<File
+				RelativePath="addremovetileset.h"
+				>
+			</File>
+			<File
+				RelativePath="automap.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC automap.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 automap.h -o .moc\moc_automap.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;automap.h"
+						Outputs=".moc\moc_automap.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC automap.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 automap.h -o .moc\moc_automap.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;automap.h"
+						Outputs=".moc\moc_automap.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="brushitem.h"
+				>
+			</File>
+			<File
+				RelativePath="bucketfilltool.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC bucketfilltool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 bucketfilltool.h -o .moc\moc_bucketfilltool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;bucketfilltool.h"
+						Outputs=".moc\moc_bucketfilltool.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC bucketfilltool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 bucketfilltool.h -o .moc\moc_bucketfilltool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;bucketfilltool.h"
+						Outputs=".moc\moc_bucketfilltool.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="changemapobject.h"
+				>
+			</File>
+			<File
+				RelativePath="changeobjectgroupproperties.h"
+				>
+			</File>
+			<File
+				RelativePath="changeproperties.h"
+				>
+			</File>
+			<File
+				RelativePath="changetileselection.h"
+				>
+			</File>
+			<File
+				RelativePath="clipboardmanager.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC clipboardmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 clipboardmanager.h -o .moc\moc_clipboardmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;clipboardmanager.h"
+						Outputs=".moc\moc_clipboardmanager.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC clipboardmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 clipboardmanager.h -o .moc\moc_clipboardmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;clipboardmanager.h"
+						Outputs=".moc\moc_clipboardmanager.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="colorbutton.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC colorbutton.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 colorbutton.h -o .moc\moc_colorbutton.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;colorbutton.h"
+						Outputs=".moc\moc_colorbutton.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC colorbutton.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 colorbutton.h -o .moc\moc_colorbutton.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;colorbutton.h"
+						Outputs=".moc\moc_colorbutton.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="command.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC command.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 command.h -o .moc\moc_command.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;command.h"
+						Outputs=".moc\moc_command.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC command.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 command.h -o .moc\moc_command.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;command.h"
+						Outputs=".moc\moc_command.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="commandbutton.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC commandbutton.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 commandbutton.h -o .moc\moc_commandbutton.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;commandbutton.h"
+						Outputs=".moc\moc_commandbutton.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC commandbutton.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 commandbutton.h -o .moc\moc_commandbutton.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;commandbutton.h"
+						Outputs=".moc\moc_commandbutton.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="commanddatamodel.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC commanddatamodel.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 commanddatamodel.h -o .moc\moc_commanddatamodel.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;commanddatamodel.h"
+						Outputs=".moc\moc_commanddatamodel.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC commanddatamodel.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 commanddatamodel.h -o .moc\moc_commanddatamodel.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;commanddatamodel.h"
+						Outputs=".moc\moc_commanddatamodel.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="commanddialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC commanddialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 commanddialog.h -o .moc\moc_commanddialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;commanddialog.h"
+						Outputs=".moc\moc_commanddialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC commanddialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 commanddialog.h -o .moc\moc_commanddialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;commanddialog.h"
+						Outputs=".moc\moc_commanddialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="createobjecttool.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC createobjecttool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 createobjecttool.h -o .moc\moc_createobjecttool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;createobjecttool.h"
+						Outputs=".moc\moc_createobjecttool.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC createobjecttool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 createobjecttool.h -o .moc\moc_createobjecttool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;createobjecttool.h"
+						Outputs=".moc\moc_createobjecttool.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\createpathTool.h"
+				>
+			</File>
+			<File
+				RelativePath="documentmanager.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC documentmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 documentmanager.h -o .moc\moc_documentmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;documentmanager.h"
+						Outputs=".moc\moc_documentmanager.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC documentmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 documentmanager.h -o .moc\moc_documentmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;documentmanager.h"
+						Outputs=".moc\moc_documentmanager.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="eraser.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC eraser.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 eraser.h -o .moc\moc_eraser.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;eraser.h"
+						Outputs=".moc\moc_eraser.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC eraser.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 eraser.h -o .moc\moc_eraser.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;eraser.h"
+						Outputs=".moc\moc_eraser.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="erasetiles.h"
+				>
+			</File>
+			<File
+				RelativePath="filltiles.h"
+				>
+			</File>
+			<File
+				RelativePath="languagemanager.h"
+				>
+			</File>
+			<File
+				RelativePath="layerdock.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC layerdock.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 layerdock.h -o .moc\moc_layerdock.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;layerdock.h"
+						Outputs=".moc\moc_layerdock.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC layerdock.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 layerdock.h -o .moc\moc_layerdock.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;layerdock.h"
+						Outputs=".moc\moc_layerdock.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="layermodel.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC layermodel.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 layermodel.h -o .moc\moc_layermodel.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;layermodel.h"
+						Outputs=".moc\moc_layermodel.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC layermodel.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 layermodel.h -o .moc\moc_layermodel.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;layermodel.h"
+						Outputs=".moc\moc_layermodel.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mainwindow.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mainwindow.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mainwindow.h -o .moc\moc_mainwindow.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mainwindow.h"
+						Outputs=".moc\moc_mainwindow.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mainwindow.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mainwindow.h -o .moc\moc_mainwindow.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mainwindow.h"
+						Outputs=".moc\moc_mainwindow.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mapdocument.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mapdocument.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mapdocument.h -o .moc\moc_mapdocument.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mapdocument.h"
+						Outputs=".moc\moc_mapdocument.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mapdocument.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mapdocument.h -o .moc\moc_mapdocument.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mapdocument.h"
+						Outputs=".moc\moc_mapdocument.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mapdocumentactionhandler.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mapdocumentactionhandler.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mapdocumentactionhandler.h -o .moc\moc_mapdocumentactionhandler.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mapdocumentactionhandler.h"
+						Outputs=".moc\moc_mapdocumentactionhandler.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mapdocumentactionhandler.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mapdocumentactionhandler.h -o .moc\moc_mapdocumentactionhandler.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mapdocumentactionhandler.h"
+						Outputs=".moc\moc_mapdocumentactionhandler.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mapobjectitem.h"
+				>
+			</File>
+			<File
+				RelativePath="mapreaderinterface.h"
+				>
+			</File>
+			<File
+				RelativePath="mapscene.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mapscene.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mapscene.h -o .moc\moc_mapscene.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mapscene.h"
+						Outputs=".moc\moc_mapscene.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mapscene.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mapscene.h -o .moc\moc_mapscene.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mapscene.h"
+						Outputs=".moc\moc_mapscene.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mapview.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mapview.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mapview.h -o .moc\moc_mapview.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mapview.h"
+						Outputs=".moc\moc_mapview.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC mapview.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 mapview.h -o .moc\moc_mapview.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;mapview.h"
+						Outputs=".moc\moc_mapview.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mapwriterinterface.h"
+				>
+			</File>
+			<File
+				RelativePath="movelayer.h"
+				>
+			</File>
+			<File
+				RelativePath="movemapobject.h"
+				>
+			</File>
+			<File
+				RelativePath="movemapobjecttogroup.h"
+				>
+			</File>
+			<File
+				RelativePath="movetileset.h"
+				>
+			</File>
+			<File
+				RelativePath="newmapdialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC newmapdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 newmapdialog.h -o .moc\moc_newmapdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;newmapdialog.h"
+						Outputs=".moc\moc_newmapdialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC newmapdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 newmapdialog.h -o .moc\moc_newmapdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;newmapdialog.h"
+						Outputs=".moc\moc_newmapdialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="newtilesetdialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC newtilesetdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 newtilesetdialog.h -o .moc\moc_newtilesetdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;newtilesetdialog.h"
+						Outputs=".moc\moc_newtilesetdialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC newtilesetdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 newtilesetdialog.h -o .moc\moc_newtilesetdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;newtilesetdialog.h"
+						Outputs=".moc\moc_newtilesetdialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="objectgroupitem.h"
+				>
+			</File>
+			<File
+				RelativePath="objectgrouppropertiesdialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC objectgrouppropertiesdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 objectgrouppropertiesdialog.h -o .moc\moc_objectgrouppropertiesdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;objectgrouppropertiesdialog.h"
+						Outputs=".moc\moc_objectgrouppropertiesdialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC objectgrouppropertiesdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 objectgrouppropertiesdialog.h -o .moc\moc_objectgrouppropertiesdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;objectgrouppropertiesdialog.h"
+						Outputs=".moc\moc_objectgrouppropertiesdialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="objectpropertiesdialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC objectpropertiesdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 objectpropertiesdialog.h -o .moc\moc_objectpropertiesdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;objectpropertiesdialog.h"
+						Outputs=".moc\moc_objectpropertiesdialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC objectpropertiesdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 objectpropertiesdialog.h -o .moc\moc_objectpropertiesdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;objectpropertiesdialog.h"
+						Outputs=".moc\moc_objectpropertiesdialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="objectselectiontool.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC objectselectiontool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 objectselectiontool.h -o .moc\moc_objectselectiontool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;objectselectiontool.h"
+						Outputs=".moc\moc_objectselectiontool.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC objectselectiontool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 objectselectiontool.h -o .moc\moc_objectselectiontool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;objectselectiontool.h"
+						Outputs=".moc\moc_objectselectiontool.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="offsetlayer.h"
+				>
+			</File>
+			<File
+				RelativePath="offsetmapdialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC offsetmapdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 offsetmapdialog.h -o .moc\moc_offsetmapdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;offsetmapdialog.h"
+						Outputs=".moc\moc_offsetmapdialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC offsetmapdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 offsetmapdialog.h -o .moc\moc_offsetmapdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;offsetmapdialog.h"
+						Outputs=".moc\moc_offsetmapdialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="painttilelayer.h"
+				>
+			</File>
+			<File
+				RelativePath="pluginmanager.h"
+				>
+			</File>
+			<File
+				RelativePath="preferences.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC preferences.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 preferences.h -o .moc\moc_preferences.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;preferences.h"
+						Outputs=".moc\moc_preferences.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC preferences.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 preferences.h -o .moc\moc_preferences.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;preferences.h"
+						Outputs=".moc\moc_preferences.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="preferencesdialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC preferencesdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 preferencesdialog.h -o .moc\moc_preferencesdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;preferencesdialog.h"
+						Outputs=".moc\moc_preferencesdialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC preferencesdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 preferencesdialog.h -o .moc\moc_preferencesdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;preferencesdialog.h"
+						Outputs=".moc\moc_preferencesdialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="propertiesdialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC propertiesdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 propertiesdialog.h -o .moc\moc_propertiesdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;propertiesdialog.h"
+						Outputs=".moc\moc_propertiesdialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC propertiesdialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 propertiesdialog.h -o .moc\moc_propertiesdialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;propertiesdialog.h"
+						Outputs=".moc\moc_propertiesdialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="propertiesmodel.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC propertiesmodel.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 propertiesmodel.h -o .moc\moc_propertiesmodel.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;propertiesmodel.h"
+						Outputs=".moc\moc_propertiesmodel.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC propertiesmodel.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 propertiesmodel.h -o .moc\moc_propertiesmodel.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;propertiesmodel.h"
+						Outputs=".moc\moc_propertiesmodel.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="propertiesview.h"
+				>
+			</File>
+			<File
+				RelativePath="quickstampmanager.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC quickstampmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 quickstampmanager.h -o .moc\moc_quickstampmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;quickstampmanager.h"
+						Outputs=".moc\moc_quickstampmanager.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC quickstampmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 quickstampmanager.h -o .moc\moc_quickstampmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;quickstampmanager.h"
+						Outputs=".moc\moc_quickstampmanager.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="renamelayer.h"
+				>
+			</File>
+			<File
+				RelativePath="resizedialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC resizedialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 resizedialog.h -o .moc\moc_resizedialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;resizedialog.h"
+						Outputs=".moc\moc_resizedialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC resizedialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 resizedialog.h -o .moc\moc_resizedialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;resizedialog.h"
+						Outputs=".moc\moc_resizedialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="resizehelper.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC resizehelper.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 resizehelper.h -o .moc\moc_resizehelper.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;resizehelper.h"
+						Outputs=".moc\moc_resizehelper.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC resizehelper.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 resizehelper.h -o .moc\moc_resizehelper.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;resizehelper.h"
+						Outputs=".moc\moc_resizehelper.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="resizelayer.h"
+				>
+			</File>
+			<File
+				RelativePath="resizemap.h"
+				>
+			</File>
+			<File
+				RelativePath="resizemapobject.h"
+				>
+			</File>
+			<File
+				RelativePath="saveasimagedialog.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC saveasimagedialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 saveasimagedialog.h -o .moc\moc_saveasimagedialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;saveasimagedialog.h"
+						Outputs=".moc\moc_saveasimagedialog.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC saveasimagedialog.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 saveasimagedialog.h -o .moc\moc_saveasimagedialog.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;saveasimagedialog.h"
+						Outputs=".moc\moc_saveasimagedialog.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="selectiontool.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC selectiontool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 selectiontool.h -o .moc\moc_selectiontool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;selectiontool.h"
+						Outputs=".moc\moc_selectiontool.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC selectiontool.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 selectiontool.h -o .moc\moc_selectiontool.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;selectiontool.h"
+						Outputs=".moc\moc_selectiontool.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="stampbrush.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC stampbrush.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 stampbrush.h -o .moc\moc_stampbrush.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;stampbrush.h"
+						Outputs=".moc\moc_stampbrush.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC stampbrush.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 stampbrush.h -o .moc\moc_stampbrush.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;stampbrush.h"
+						Outputs=".moc\moc_stampbrush.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tiledapplication.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tiledapplication.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tiledapplication.h -o .moc\moc_tiledapplication.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tiledapplication.h"
+						Outputs=".moc\moc_tiledapplication.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tiledapplication.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tiledapplication.h -o .moc\moc_tiledapplication.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tiledapplication.h"
+						Outputs=".moc\moc_tiledapplication.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tilelayeritem.h"
+				>
+			</File>
+			<File
+				RelativePath="tilepainter.h"
+				>
+			</File>
+			<File
+				RelativePath="tileselectionitem.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tileselectionitem.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tileselectionitem.h -o .moc\moc_tileselectionitem.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tileselectionitem.h"
+						Outputs=".moc\moc_tileselectionitem.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tileselectionitem.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tileselectionitem.h -o .moc\moc_tileselectionitem.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tileselectionitem.h"
+						Outputs=".moc\moc_tileselectionitem.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tilesetdock.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tilesetdock.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tilesetdock.h -o .moc\moc_tilesetdock.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tilesetdock.h"
+						Outputs=".moc\moc_tilesetdock.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tilesetdock.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tilesetdock.h -o .moc\moc_tilesetdock.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tilesetdock.h"
+						Outputs=".moc\moc_tilesetdock.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tilesetmanager.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tilesetmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tilesetmanager.h -o .moc\moc_tilesetmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tilesetmanager.h"
+						Outputs=".moc\moc_tilesetmanager.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tilesetmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tilesetmanager.h -o .moc\moc_tilesetmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tilesetmanager.h"
+						Outputs=".moc\moc_tilesetmanager.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tilesetmodel.h"
+				>
+			</File>
+			<File
+				RelativePath="tilesetview.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tilesetview.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tilesetview.h -o .moc\moc_tilesetview.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tilesetview.h"
+						Outputs=".moc\moc_tilesetview.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC tilesetview.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 tilesetview.h -o .moc\moc_tilesetview.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;tilesetview.h"
+						Outputs=".moc\moc_tilesetview.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tmxmapreader.h"
+				>
+			</File>
+			<File
+				RelativePath="tmxmapwriter.h"
+				>
+			</File>
+			<File
+				RelativePath="toolmanager.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC toolmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 toolmanager.h -o .moc\moc_toolmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;toolmanager.h"
+						Outputs=".moc\moc_toolmanager.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC toolmanager.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 toolmanager.h -o .moc\moc_toolmanager.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;toolmanager.h"
+						Outputs=".moc\moc_toolmanager.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="undocommands.h"
+				>
+			</File>
+			<File
+				RelativePath="undodock.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC undodock.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 undodock.h -o .moc\moc_undodock.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;undodock.h"
+						Outputs=".moc\moc_undodock.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC undodock.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 undodock.h -o .moc\moc_undodock.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;undodock.h"
+						Outputs=".moc\moc_undodock.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="utils.h"
+				>
+			</File>
+			<File
+				RelativePath="zoomable.h"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC zoomable.h"
+						CommandLine="$(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 zoomable.h -o .moc\moc_zoomable.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe;zoomable.h"
+						Outputs=".moc\moc_zoomable.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC zoomable.h"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 zoomable.h -o .moc\moc_zoomable.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;zoomable.h"
+						Outputs=".moc\moc_zoomable.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}"
+			>
+			<File
+				RelativePath=".moc\moc_aboutdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_abstracttiletool.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_abstracttool.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_automap.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_bucketfilltool.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_clipboardmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_colorbutton.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_command.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_commandbutton.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_commanddatamodel.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_commanddialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_createobjecttool.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_documentmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_eraser.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_layerdock.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_layermodel.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_mainwindow.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_mapdocument.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_mapdocumentactionhandler.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_mapscene.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_mapview.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_newmapdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_newtilesetdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_objectgrouppropertiesdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_objectpropertiesdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_objectselectiontool.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_offsetmapdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_preferences.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_preferencesdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_propertiesdialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_propertiesmodel.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_quickstampmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_resizedialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_resizehelper.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_saveasimagedialog.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_selectiontool.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_stampbrush.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_tiledapplication.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_tileselectionitem.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_tilesetdock.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_tilesetmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_tilesetview.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_toolmanager.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_undodock.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".moc\moc_zoomable.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".rcc\qrc_tiled.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".obj\tiled.res"
+				>
+			</File>
+			<File
+				RelativePath=".moc\toolmanager.moc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC toolmanager.cpp"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 toolmanager.cpp -o .moc\toolmanager.moc&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;toolmanager.cpp"
+						Outputs=".moc\toolmanager.moc"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="MOC toolmanager.cpp"
+						CommandLine="_(QTDIR)\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_DLL -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;$(QTDIR)\include\QtCore&quot; -I&quot;$(QTDIR)\include\QtGui&quot; -I&quot;$(QTDIR)\include\QtOpenGL&quot; -I&quot;$(QTDIR)\include&quot; -I&quot;..\libtiled&quot; -I&quot;.&quot; -I&quot;$(QTDIR)\include\ActiveQt&quot; -I&quot;.moc&quot; -I&quot;.uic&quot; -Ic:\Qt\4.7.3\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 toolmanager.cpp -o .moc\toolmanager.moc&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\moc.exe;toolmanager.cpp"
+						Outputs=".moc\toolmanager.moc"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".uic\ui_aboutdialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_commanddialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_mainwindow.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_newmapdialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_newtilesetdialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_objectpropertiesdialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_offsetmapdialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_preferencesdialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_propertiesdialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_resizedialog.h"
+				>
+			</File>
+			<File
+				RelativePath=".uic\ui_saveasimagedialog.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Form Files"
+			Filter="ui"
+			UniqueIdentifier="{99349809-55BA-4b9d-BF79-8FDBB0286EB3}"
+			ParseFiles="false"
+			>
+			<File
+				RelativePath="aboutdialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC aboutdialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe aboutdialog.ui -o .uic\ui_aboutdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;aboutdialog.ui"
+						Outputs=".uic\ui_aboutdialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC aboutdialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe aboutdialog.ui -o .uic\ui_aboutdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;aboutdialog.ui"
+						Outputs=".uic\ui_aboutdialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="commanddialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC commanddialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe commanddialog.ui -o .uic\ui_commanddialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;commanddialog.ui"
+						Outputs=".uic\ui_commanddialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC commanddialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe commanddialog.ui -o .uic\ui_commanddialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;commanddialog.ui"
+						Outputs=".uic\ui_commanddialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mainwindow.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC mainwindow.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe mainwindow.ui -o .uic\ui_mainwindow.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;mainwindow.ui"
+						Outputs=".uic\ui_mainwindow.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC mainwindow.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe mainwindow.ui -o .uic\ui_mainwindow.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;mainwindow.ui"
+						Outputs=".uic\ui_mainwindow.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="newmapdialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC newmapdialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe newmapdialog.ui -o .uic\ui_newmapdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;newmapdialog.ui"
+						Outputs=".uic\ui_newmapdialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC newmapdialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe newmapdialog.ui -o .uic\ui_newmapdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;newmapdialog.ui"
+						Outputs=".uic\ui_newmapdialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="newtilesetdialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC newtilesetdialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe newtilesetdialog.ui -o .uic\ui_newtilesetdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;newtilesetdialog.ui"
+						Outputs=".uic\ui_newtilesetdialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC newtilesetdialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe newtilesetdialog.ui -o .uic\ui_newtilesetdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;newtilesetdialog.ui"
+						Outputs=".uic\ui_newtilesetdialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="objectpropertiesdialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC objectpropertiesdialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe objectpropertiesdialog.ui -o .uic\ui_objectpropertiesdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;objectpropertiesdialog.ui"
+						Outputs=".uic\ui_objectpropertiesdialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC objectpropertiesdialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe objectpropertiesdialog.ui -o .uic\ui_objectpropertiesdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;objectpropertiesdialog.ui"
+						Outputs=".uic\ui_objectpropertiesdialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="offsetmapdialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC offsetmapdialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe offsetmapdialog.ui -o .uic\ui_offsetmapdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;offsetmapdialog.ui"
+						Outputs=".uic\ui_offsetmapdialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC offsetmapdialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe offsetmapdialog.ui -o .uic\ui_offsetmapdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;offsetmapdialog.ui"
+						Outputs=".uic\ui_offsetmapdialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="preferencesdialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC preferencesdialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe preferencesdialog.ui -o .uic\ui_preferencesdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;preferencesdialog.ui"
+						Outputs=".uic\ui_preferencesdialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC preferencesdialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe preferencesdialog.ui -o .uic\ui_preferencesdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;preferencesdialog.ui"
+						Outputs=".uic\ui_preferencesdialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="propertiesdialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC propertiesdialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe propertiesdialog.ui -o .uic\ui_propertiesdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;propertiesdialog.ui"
+						Outputs=".uic\ui_propertiesdialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC propertiesdialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe propertiesdialog.ui -o .uic\ui_propertiesdialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;propertiesdialog.ui"
+						Outputs=".uic\ui_propertiesdialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="resizedialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC resizedialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe resizedialog.ui -o .uic\ui_resizedialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;resizedialog.ui"
+						Outputs=".uic\ui_resizedialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC resizedialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe resizedialog.ui -o .uic\ui_resizedialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;resizedialog.ui"
+						Outputs=".uic\ui_resizedialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="saveasimagedialog.ui"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC saveasimagedialog.ui"
+						CommandLine="$(QTDIR)\bin\uic.exe saveasimagedialog.ui -o .uic\ui_saveasimagedialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="$(QTDIR)\bin\uic.exe;saveasimagedialog.ui"
+						Outputs=".uic\ui_saveasimagedialog.h"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="UIC saveasimagedialog.ui"
+						CommandLine="_(QTDIR)\bin\uic.exe saveasimagedialog.ui -o .uic\ui_saveasimagedialog.h&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\uic.exe;saveasimagedialog.ui"
+						Outputs=".uic\ui_saveasimagedialog.h"
+					/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="qrc;*"
+			UniqueIdentifier="{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}"
+			ParseFiles="false"
+			>
+			<File
+				RelativePath="tiled.qrc"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="RCC tiled.qrc"
+						CommandLine="$(QTDIR)\bin\rcc.exe -name tiled tiled.qrc -o .rcc\qrc_tiled.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\rcc.exe;tiled.qrc"
+						Outputs=".rcc\qrc_tiled.cpp"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="RCC tiled.qrc"
+						CommandLine="_(QTDIR)\bin\rcc.exe -name tiled tiled.qrc -o .rcc\qrc_tiled.cpp&#x0D;&#x0A;"
+						AdditionalDependencies="_(QTDIR)\bin\rcc.exe;tiled.qrc"
+						Outputs=".rcc\qrc_tiled.cpp"
+					/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<File
+			RelativePath="tiled.rc"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
