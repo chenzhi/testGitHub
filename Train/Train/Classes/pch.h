@@ -7,6 +7,9 @@
 #include "Singleton.h"
 //#include "gles/egl.h"
 
+
+#define SafeDelete(a) if(a!=NULL) delete a;a=NULL;
+
 #endif
 
 

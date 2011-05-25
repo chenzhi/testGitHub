@@ -182,7 +182,7 @@ bool HelloWorld::init()
 	this->addChild(pMap);
 
 
-	initRailManger();
+	//initRailManger();
 
 
     return bRet;
@@ -195,24 +195,24 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
 }
 
 
-void HelloWorld::initRailManger()
-{
-	m_pRailMap=new RailMap(this);
-	int index=0;
-
-   m_pTrain = new Train(this);
-
-	m_pRailMap->addRailLine("first",cocos2d::CCPoint(0.0f,200.0f),cocos2d::CCPoint(100.0f,200));
-	m_pRailMap->addRailLine("second",cocos2d::CCPoint(100.0f,200.0f),cocos2d::CCPoint(200.0f,100.0f));
-
-
-	RailLine* pLine=m_pRailMap->getRailLineByName("first");
-	m_pTrain->setCurrentRailLine(pLine);
-	this->schedule((SEL_SCHEDULE)&HelloWorld::update);
-
-	return ;
-
-}
+//void HelloWorld::initRailManger()
+//{
+//	m_pRailMap=new RailMap(this);
+//	int index=0;
+//
+//        m_pTrain = new Train(this);
+//
+//	m_pRailMap->addRailLine("first",cocos2d::CCPoint(0.0f,200.0f),cocos2d::CCPoint(100.0f,200));
+//	m_pRailMap->addRailLine("second",cocos2d::CCPoint(100.0f,200.0f),cocos2d::CCPoint(200.0f,100.0f));
+//
+//
+//	RailLine* pLine=m_pRailMap->getRailLineByName("first");
+//	m_pTrain->setCurrentRailLine(pLine);
+//	this->schedule((SEL_SCHEDULE)&HelloWorld::update);
+//
+//	return ;
+//
+//}
 
 void HelloWorld::destroyRailManager()
 {
