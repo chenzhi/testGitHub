@@ -324,6 +324,14 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Classes\StringUtil.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Classes\StringUtil.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Classes\Tools.cpp"
 				>
 			</File>

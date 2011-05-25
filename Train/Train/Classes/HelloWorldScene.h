@@ -5,7 +5,7 @@
 
 class RailMap;
 class Train;
-
+class cocos2d::CCTMXTiledMap;
 
 class HelloWorld : public cocos2d::CCLayer
 {
@@ -30,6 +30,9 @@ public:
 
 	void update(cocos2d::ccTime dt);
 
+
+	///初始化所有的线信息
+	void initLineMap(cocos2d::CCTMXTiledMap* pMap);
 
 protected:
 

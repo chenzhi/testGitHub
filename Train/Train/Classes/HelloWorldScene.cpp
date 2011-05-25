@@ -4,7 +4,7 @@
 #include "Train.h"
 #include "RailLine.h"
 #include "RailMap.h"
-
+#include "StringUtil.h"
 
 using namespace cocos2d;
 
@@ -53,6 +53,8 @@ bool HelloWorld::init()
 	CCTMXTiledMap *pMap=CCTMXTiledMap::tiledMapWithTMXFile("TrainType.tmx");
 	if(pMap==NULL)
 		return false;
+
+	initLineMap(pMap);
 
 
 
@@ -234,4 +236,59 @@ void  HelloWorld::update(cocos2d::ccTime dt)
 	if(m_pTrain!=NULL)
 		m_pTrain->update(dt);
 
+}
+
+///初始化所有的线信息
+void  HelloWorld::initLineMap(cocos2d::CCTMXTiledMap* pMap)
+{
+	if(pMap==NULL)
+		return ;
+
+
+	CCTMXObjectGroup* pTrainTypeGroup=pMap->groupNamed("TrainsType");
+	if(pTrainTypeGroup!=NULL)
+	{
+
+
+		CCMutableArray<CCStringToStringDictionary*>* pObjects=pTrainTypeGroup->getObjects();
+		int count=pObjects->count();
+		for(int i=0;i<count;++i)
+		{
+			CCStringToStringDictionary* pDic=pObjects->getObjectAtIndex(i);
+			if(pDic!=NULL)
+			{
+
+				std::string	key;
+				CCString* pValue;
+				pDic->begin();
+				pValue=pDic->next(&key);
+				while(pValue!=NULL)
+				{
+					CCString*pstrValue=pDic->objectForKey("path");
+
+					std::string v=pstrValue->m_sString;
+
+					std::vector<std::string> pointList=StringUtil::split(v," ");
+
+					int pointSize=pointList.size()/2;
+					for(int j=0;j<pointSize;++j)
+					{
+						int x=0,y=0;
+						x=StringUtil::parseInt(pointList[2*j]);
+						y=StringUtil::parseInt(pointList[2*j+1]);
+						CCPoint point(x,y);
+
+					}
+
+					pValue=pDic->next(&key);
+
+				}
+
+			}
+
+
+		}
+
+		return ;
+	}
 }

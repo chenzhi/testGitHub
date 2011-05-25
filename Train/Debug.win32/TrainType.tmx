@@ -8,18 +8,48 @@
  </tileset>
  <layer name="BackGround" width="10" height="5">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC43K2wqAIBRE0ZOVpmWoePn/P3UHvaXQwIJ52IuIKKzYsEPLdwYHLBxOXIPO435/QEQadM8yCirapPm7DkQMm9bIAAAA
+   H4sIAAAAAAAAC2NgIA6wQzEjEDMBMTMQswAxKxCzIckjYw4g5gRiLiDmBmIeJDlqAwAibhHvyAAAAA==
   </data>
  </layer>
  <objectgroup name="TrainsType" width="10" height="5">
-  <object x="-236" y="-199">
+  <object name="startLine" x="0" y="0">
    <properties>
-    <property name="path" value="298 191 234 331 426 320 662 156"/>
+    <property name="path" value="-1 92 127 92"/>
    </properties>
   </object>
-  <object x="350" y="-131">
+  <object x="1" y="1">
    <properties>
-    <property name="path" value="38 219 154 288 291 287"/>
+    <property name="path" value="128 91 509 90"/>
+   </properties>
+  </object>
+  <object x="0" y="0">
+   <properties>
+    <property name="path" value="437 -30"/>
+   </properties>
+  </object>
+  <object x="0" y="0">
+   <properties>
+    <property name="path" value="128 92 191 107 232 127 269 144 297 155 318 157"/>
+   </properties>
+  </object>
+  <object x="0" y="0">
+   <properties>
+    <property name="path" value="1 158 320 158"/>
+   </properties>
+  </object>
+  <object x="0" y="0">
+   <properties>
+    <property name="path" value="319 157 640 158"/>
+   </properties>
+  </object>
+  <object x="0" y="0">
+   <properties>
+    <property name="path" value="320 156 368 145 448 107 510 92"/>
+   </properties>
+  </object>
+  <object x="0" y="0">
+   <properties>
+    <property name="path" value="511 91 640 91"/>
    </properties>
   </object>
  </objectgroup>
