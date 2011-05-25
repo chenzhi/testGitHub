@@ -46,7 +46,7 @@ CCScene* HelloWorld::scene()
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
-	__super::init();
+	CCLayer::init();
     bool bRet = true;
   
 

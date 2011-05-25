@@ -3,13 +3,9 @@
 
 
 #include "cocos2d.h"
-
 #include <algorithm>
-
 #include "Singleton.h"
-
-
-#include "gles/egl.h"
+//#include "gles/egl.h"
 
 #endif
 

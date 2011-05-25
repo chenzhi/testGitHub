@@ -1,10 +1,11 @@
 #include "pch.h"
+#include "Singleton.h"
 #include "RailMap.h"
 
 
 
 
-RailMap* Singleton<RailMap>::ms_Singleton=NULL;
+template<> RailMap* Singleton<RailMap>::ms_Singleton=NULL;
 
 cocos2d::CCPoint	RailMap::m_ConectArea(5.0f,5.0f);
 
@@ -97,8 +98,8 @@ void RailMap::destroyAllRailLine()
 /**判断两个点是否在联接的误差范围以内 */
 bool  RailMap::isInConectArea(const cocos2d::CCPoint& point1,const cocos2d::CCPoint& point2)
 {
-	float temx=abs(point2.x-point1.x);
-	float temy=abs(point2.y-point1.y);
+	float temx=::abs(point2.x-point1.x);
+	float temy=::abs(point2.y-point1.y);
 
 	if(temx<=m_ConectArea.x&& temy<=m_ConectArea.y)
 		return true;

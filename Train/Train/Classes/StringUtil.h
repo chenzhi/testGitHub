@@ -15,10 +15,10 @@ public:
 
 
 	///全部转为小写
-	static void StringUtil::toLowerCase(std::string& str);
+	static void toLowerCase(std::string& str);
 	
 	///合部转为大写
-	static void StringUtil::toUpperCase(std::string& str);
+	static void toUpperCase(std::string& str);
 
 
 	/**转为浮点
