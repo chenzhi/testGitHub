@@ -47,7 +47,7 @@ CCScene* HelloWorld::scene()
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
-	__super::init();
+	CCLayer::init();
     bool bRet = true;
   
 
@@ -197,9 +197,7 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
 
 
 void HelloWorld::initRailManger()
-{
-	m_pRailMap=new RailMap(this);
-	int index=0;
+{	m_pRailMap=new RailMap(this);
 
    m_pTrain = new Train(this);
 

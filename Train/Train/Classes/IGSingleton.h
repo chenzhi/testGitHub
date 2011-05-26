@@ -7,7 +7,8 @@
 
 
 
-template <typename T> class Singleton
+template <typename T> 
+class Singleton
 {
 protected:
 

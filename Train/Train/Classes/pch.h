@@ -3,13 +3,12 @@
 
 
 #include "cocos2d.h"
-
 #include <algorithm>
+#include "IGSingleton.h"
+//#include "gles/egl.h"
 
-#include "Singleton.h"
 
-
-#include "gles/egl.h"
+#define SafeDelete(a) if(a!=NULL) delete a;a=NULL;
 
 #endif
 
