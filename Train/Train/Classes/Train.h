@@ -1,7 +1,11 @@
 #ifndef train_h_h_h_h_
 #define train_h_h_h_h_
 
+namespace IG
+{
+	 class Vector2;
 
+}
 
 enum MoveDir
 {
@@ -32,7 +36,7 @@ public:
 protected:
 
 	/**µ÷Õû³¯Ïò*/
-	void updateOrientate();
+	void updateOrientate(const IG::Vector2& p0,const IG::Vector2& p2);
 
 
 

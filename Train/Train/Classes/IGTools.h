@@ -2,6 +2,7 @@
 #ifndef Tools_h_h_h_h_h
 #define Tools_h_h_h_h_h
 
+#include "cocos2d.h"
 
 
 inline cocos2d::CCPoint operator+(const cocos2d::CCPoint& p1,const cocos2d::CCPoint& p2)

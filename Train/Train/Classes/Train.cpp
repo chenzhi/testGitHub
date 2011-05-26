@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Train.h"
 #include "RailLine.h"
-#include "Tools.h"
+#include "IGTools.h"
 
 Train::Train(cocos2d::CCLayer* pLayer)
 :m_pSprite(NULL),m_pCurrentRailLine(NULL),m_LinePercent(0.0)
@@ -47,21 +47,29 @@ void  Train::update(float time)
 	if(m_pCurrentRailLine==NULL)
 		return ;
 
-	m_LinePercent+=0.005f;
+	m_LinePercent+=0.0005f;
 	if(m_LinePercent>1.0f)
 	{
 		m_LinePercent=0.0f;
-	    m_pCurrentRailLine=m_pCurrentRailLine->getOpenTrailLine();
+		RailLine* pTemLine=m_pCurrentRailLine->getOpenTrailLine();
+	   	if(pTemLine==NULL)
+		{
+			m_pCurrentRailLine=m_pCurrentRailLine->getOpenHeadLine();
+		}else
+		{
+			m_pCurrentRailLine=pTemLine;
+		}
 		return ;
 	}
 
-	cocos2d::CCPoint TemPoint=m_pCurrentRailLine->getPointByPercent(m_LinePercent);
+	IG::Vector2 TemPoint,beforePoint,afterPoint;
+	m_pCurrentRailLine->getPercentPoint(m_LinePercent,TemPoint,beforePoint,afterPoint);
 	if(m_pSprite!=NULL)
 	{
-		m_pSprite->setPosition(TemPoint);
+		m_pSprite->setPosition(cocos2d::CCPoint(TemPoint.x,TemPoint.y));
 	}
 
-	updateOrientate();
+	updateOrientate(beforePoint,afterPoint);
 
 }
 
@@ -71,20 +79,16 @@ void Train::setCurrentRailLine(RailLine* pLine)
 	m_pCurrentRailLine=pLine;
 }
 
-void Train::updateOrientate()
+void Train::updateOrientate(const IG::Vector2& p0,const IG::Vector2& p1)
 {
-	if(m_pCurrentRailLine==NULL)
-	{
-		return ;
-	}
-	cocos2d::CCPoint headPoint=m_pCurrentRailLine->getHeadPoint();
-	cocos2d::CCPoint trailPoint=m_pCurrentRailLine->getTrailPoint();
+	
 
-	cocos2d::CCPoint dir=NormalPoint(trailPoint-headPoint);
-	cocos2d::CCPoint xdir(1.0f,0.0f);
+	IG::Vector2 dir=(p1-p0);
+	dir.normalise();
+	IG::Vector2 xdir(1.0f,0.0f);
 
 
-    float leng=length(dir);
+    float leng=dir.length();
 	leng=1.0f/leng;
 	float angle=acos(dir.x);
 	angle*=(180.0f/3.1415926f);

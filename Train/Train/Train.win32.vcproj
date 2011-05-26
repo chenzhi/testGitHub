@@ -320,23 +320,75 @@
 			Name="tools"
 			>
 			<File
-				RelativePath=".\Classes\Singleton.h"
+				RelativePath=".\IGLine.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="0"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\IGLine.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Classes\StringUtil.cpp"
+				RelativePath=".\IGplatform.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Classes\StringUtil.h"
+				RelativePath=".\Classes\IGSingleton.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Classes\Tools.cpp"
+				RelativePath=".\Classes\IGStringUtil.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="0"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\Classes\IGStringUtil.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Classes\Tools.h"
+				RelativePath=".\Classes\IGTools.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="0"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\Classes\IGTools.h"
+				>
+			</File>
+			<File
+				RelativePath=".\IGVector2.cpp"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="0"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\IGVector2.h"
 				>
 			</File>
 		</Filter>

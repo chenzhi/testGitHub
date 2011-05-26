@@ -4,7 +4,8 @@
 #include "Train.h"
 #include "RailLine.h"
 #include "RailMap.h"
-#include "StringUtil.h"
+#include "IGStringUtil.h"
+#include "IGLine.h"
 
 using namespace cocos2d;
 
@@ -202,11 +203,19 @@ void HelloWorld::initRailManger()
 
    m_pTrain = new Train(this);
 
-	m_pRailMap->addRailLine("first",cocos2d::CCPoint(0.0f,200.0f),cocos2d::CCPoint(100.0f,200));
-	m_pRailMap->addRailLine("second",cocos2d::CCPoint(100.0f,200.0f),cocos2d::CCPoint(200.0f,100.0f));
+	//m_pRailMap->addRailLine("first",IG::Vector2(0.0f,200.0f),IG::Vector2(100.0f,200));
+
+   IG::LineSegment2D line;
+   line.addPoint(IG::Vector2(0.0f,200.0f));
+   line.addPoint(IG::Vector2(100.0f,200.0f));
+   line.addPoint(IG::Vector2(200.0f,300.0f));
+   line.addPoint(IG::Vector2(300.0f,0.0f));
+
+   m_pRailMap->addRailLine("second",line);
 
 
-	RailLine* pLine=m_pRailMap->getRailLineByName("first");
+	RailLine* pLine=m_pRailMap->getRailLineByName("second");
+	pLine->setBreak(false);
 	m_pTrain->setCurrentRailLine(pLine);
 	this->schedule((SEL_SCHEDULE)&HelloWorld::update);
 
@@ -268,14 +277,14 @@ void  HelloWorld::initLineMap(cocos2d::CCTMXTiledMap* pMap)
 
 					std::string v=pstrValue->m_sString;
 
-					std::vector<std::string> pointList=StringUtil::split(v," ");
+					std::vector<std::string> pointList=IG::StringUtil::split(v," ");
 
 					int pointSize=pointList.size()/2;
 					for(int j=0;j<pointSize;++j)
 					{
 						int x=0,y=0;
-						x=StringUtil::parseInt(pointList[2*j]);
-						y=StringUtil::parseInt(pointList[2*j+1]);
+						x=IG::StringUtil::parseInt(pointList[2*j]);
+						y=IG::StringUtil::parseInt(pointList[2*j+1]);
 						CCPoint point(x,y);
 
 					}

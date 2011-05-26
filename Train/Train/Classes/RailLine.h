@@ -7,9 +7,11 @@
 #ifndef RailLine_h_h_h_h_h
 #define RailLine_h_h_h_h_h
 
+#include "IGLine.h"
 
 class RailLine;
 typedef std::vector<RailLine*> RailLineVector;
+
 
 class RailLine  :public cocos2d::CCNode
 {
@@ -21,16 +23,23 @@ protected:
 
 	public:
 
-	RailLine(const std::string& name,const cocos2d::CCPoint&head ,const cocos2d::CCPoint& trail );
+	RailLine(const std::string& name,const IG::LineSegment2D& line );
+
+	RailLine(const std::string& name,const IG::Vector2& head ,const IG::Vector2& trail );
 
 	~RailLine();
+
+	void addPoint(const IG::Vector2& point);
+
+	bool  insertPoint(unsigned int index, const IG::Vector2& point);
+
 public:
 	const std::string& getName()const    {return m_Name;}
 
 
-	cocos2d::CCPoint getHeadPoint()const {return m_HeadPoint;}
+	bool  getHeadPoint(IG::Vector2& p)const;
 
-	cocos2d::CCPoint getTrailPoint()const {return m_TrailPoint;}
+	bool  getTrailPoint(IG::Vector2& p )const ;
 
 
 	unsigned int     getHeadLineCount()const {return m_HeadRailVector.size();}
@@ -48,9 +57,9 @@ public:
 	/**首尾部加入一个联接线段,联接线段的首尾必须与本线段首尾有一个位置相同
 	*@param bool head true表示pline的头部加入到当前线段的尾部否
 	*/
-	void             addTrailLine(RailLine* pLine, bool head);
+	void             addTrailLine(RailLine* pLine);
 
-	void             addHeadLine(RailLine*  pLine,bool head);
+	void             addHeadLine(RailLine*  pLine);
 
 
 	/**判断是否是与首部相连的线段*/
@@ -76,7 +85,15 @@ public:
     
 	void             turnTrailLine();
 
-	cocos2d::CCPoint  getPointByPercent(float percent) const ;
+
+	/**获取在这条线段上的点
+	*@ percent 0 表示第一个点。1表示最后一个点
+	*@ point 返回percent对应的点
+	*@ beforePoint 位于percent前一个点
+	*@ afertPint 位于percent后一个点
+	*@return 成功返回真。失败返回假
+	*/
+	bool getPercentPoint(float percent,IG::Vector2& point,IG::Vector2&beforPoint,IG::Vector2&afertPoint);
 
 
 protected:
@@ -89,11 +106,7 @@ protected:
 
 	const std::string    m_Name;
 
-	
-	///线段起点和终点,
-	cocos2d::CCPoint      m_HeadPoint;
-	cocos2d::CCPoint      m_TrailPoint;
-
+	IG::LineSegment2D    m_LineSegment;
 
 	///首部联接的线断
 	RailLineVector m_HeadRailVector;

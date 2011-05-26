@@ -1,13 +1,20 @@
 #include "pch.h"
 #include "RailLine.h"
-#include "Tools.h"
+#include "IGTools.h"
 
 
-RailLine::RailLine(const std::string& name, const cocos2d::CCPoint&head ,const cocos2d::CCPoint& trail)
+RailLine::RailLine(const std::string& name, const IG::Vector2& head,const IG::Vector2 & trail)
 :m_Name(name)
 {
-	m_HeadPoint=head;
-	m_TrailPoint=trail;
+	m_LineSegment.addPoint(head);
+	m_LineSegment.addPoint(trail);
+
+}
+
+RailLine::RailLine(const std::string& name,const IG::LineSegment2D& line )
+:m_Name(name),m_LineSegment(line)
+{
+
 
 }
 
@@ -15,6 +22,28 @@ RailLine::RailLine(const std::string& name, const cocos2d::CCPoint&head ,const c
 RailLine::~RailLine()
 {
 	
+
+}
+
+void RailLine::addPoint(const IG::Vector2& point)
+{
+	m_LineSegment.addPoint(point);
+}
+
+bool  RailLine::insertPoint(unsigned int index, const IG::Vector2& point)
+{
+	return m_LineSegment.insertPoint(index,point);
+
+}
+
+bool  RailLine::getHeadPoint(IG::Vector2& p )const
+{
+	return m_LineSegment.getHeadPoint(p);
+}
+
+bool  RailLine::getTrailPoint(IG::Vector2& p )const
+{
+	return m_LineSegment.getTrailPoint(p);
 
 }
 
@@ -50,7 +79,7 @@ RailLine*   RailLine::getOpenHeadLine()const
 }
 
 
-void  RailLine::addTrailLine(RailLine* pLine,bool head)
+void  RailLine::addTrailLine(RailLine* pLine)
 {
 	if(pLine==NULL)
 		return ;
@@ -63,18 +92,13 @@ void  RailLine::addTrailLine(RailLine* pLine,bool head)
 
 	m_TrailRailVector.push_back(pLine);
 
-	if(head==true)
-	{
-		pLine->addHeadLine(this,false);
-	}else
-	{
-		pLine->addTrailLine(this,false);
-	}
+	pLine->addHeadLine(this);
+	
 
 }
 
 
-void  RailLine::addHeadLine(RailLine*  pLine,bool head)
+void  RailLine::addHeadLine(RailLine*  pLine)
 {
 
 	if(pLine==NULL)
@@ -85,13 +109,9 @@ void  RailLine::addHeadLine(RailLine*  pLine,bool head)
 		pLine->setBreak(false);
 	m_HeadRailVector.push_back(pLine);
 
-	if(head==true)
-	{
-		pLine->addHeadLine(this,true);
-	}else
-	{
-		pLine->addTrailLine(this,true);
-	}
+
+	pLine->addTrailLine(this);
+	
 
 	return ;
 }
@@ -197,41 +217,28 @@ void RailLine::draw(void)
 
 	if(isBreak())
 		return ;
-
-	//glVertex3f()
-
-	cocos2d::ccVertex2F vertices[2]=
-	{
-		{m_HeadPoint.x,m_HeadPoint.y},
-		{m_TrailPoint.x,m_TrailPoint.y},
-	};
+	int PointCount=m_LineSegment.getPointCount();
+	if(PointCount==0)
+		return ;
+	
 
 	glDisable(GL_TEXTURE_2D);
 	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-	glDisableClientState(GL_COLOR_ARRAY);
+	//glDisableClientState(GL_COLOR_ARRAY);
 
-	glVertexPointer(2, GL_FLOAT, 0, vertices);	
-	glDrawArrays(GL_LINES, 0, 2);
+	glColor4f(0.0f,1.1f,0.0f,1.0f);
+	glVertexPointer(2, GL_FLOAT, 0,&(m_LineSegment.getPointList()[0]));	
+	glDrawArrays(GL_LINE_STRIP, 0,PointCount);
 
-	glEnableClientState(GL_COLOR_ARRAY);
+	//glEnableClientState(GL_COLOR_ARRAY);
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 	glEnable(GL_TEXTURE_2D);
+
 	return ;
 
 }
 
-cocos2d::CCPoint  RailLine::getPointByPercent(float percent) const 
+bool RailLine::getPercentPoint(float percent,IG::Vector2& point,IG::Vector2&beforPoint,IG::Vector2&afertPoint)
 {
-	if(percent>1.0f)
-		percent=1.0f;
-	if(percent<0.0f)
-		percent=0.0f;
-	//percent=std::max(0.0f,percent)
-	//cocos2d::CCPoint tem(m_TrailPoint.x-m_HeadPoint.x,m_TrailPoint.y-m_HeadPoint.y);
-	//tem.x*=percent;
-	//tem.y*=percent;
-	//return cocos2d::CCPoint(m_HeadPoint.x+tem.x,m_HeadPoint.y+tem.y);
-
-	return m_HeadPoint+(m_TrailPoint-m_HeadPoint)*percent;
-
+	return m_LineSegment.getPercentPoint(percent,point,beforPoint,afertPoint);
 }
