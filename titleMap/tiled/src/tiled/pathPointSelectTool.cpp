@@ -173,6 +173,9 @@ namespace Tiled
 
 			}
 
+				MapDocument *pDoc=  mMapScene->mapDocument();
+					pDoc->emitMapChanged();		
+
 		}
 
 		/**
@@ -209,12 +212,13 @@ namespace Tiled
 					m_pSelectPolyGraphics->setMapObject(NULL);
 					m_Mode=Selecting;
 
-					//MapDocument *pDoc=  mMapScene->mapDocument()
+
 					
 				}
 			}
 
-			
+					MapDocument *pDoc=  mMapScene->mapDocument();
+					pDoc->emitMapChanged();			
 
 		}
 
