@@ -81,6 +81,8 @@ void Tiled::Internal::createPathTool::mousePressed(QGraphicsSceneMouseEvent *eve
 			m_pMapObejct=NULL;
 			m_pPoly=NULL;
 			mNewMapObjectItem=NULL;
+			//MapDocument *pDoc=  mMapScene->mapDocument();
+			//pDoc->emitMapChanged();		
 	
 			break;
 
@@ -111,7 +113,7 @@ void Tiled::Internal::createPathTool::mousePressed(QGraphicsSceneMouseEvent *eve
 				mNewMapObjectItem->setZValue(10000);
 				mMapScene->addItem(mNewMapObjectItem);
 				mapDocument()->emitObjectAdded(m_pMapObejct);
-
+                doc->emitMapChanged();		
 				m_isCreate=true;
 			
 
