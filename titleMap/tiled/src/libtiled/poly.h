@@ -17,7 +17,12 @@ namespace Tiled
 
 		   Poly(const std::string& name );
 
+		   const std::string& getName()const{return m_Name;}
+
 		   ~Poly();
+
+
+		   Poly*  clone();
 
 
 		   void addPoint(const QPointF & point);

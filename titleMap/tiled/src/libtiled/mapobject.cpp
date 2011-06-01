@@ -59,5 +59,19 @@ MapObject *MapObject::clone() const
                                  mSize.width(), mSize.height());
     o->setProperties(properties());
     o->setTile(mTile);
+
+	if(m_pPoly!=NULL&&m_pPoly->getPointCount()>1)
+	{
+		Poly* pPoly=new Poly(m_pPoly->getName());
+		for(int i=0;i<m_pPoly->getPointCount();++i)
+		{
+			pPoly->addPoint(m_pPoly->getPointByIndex(i));
+			
+		}
+
+		o->setPoly(pPoly);
+	}
+
+
     return o;
 }

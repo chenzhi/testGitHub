@@ -62,4 +62,18 @@ bool  Poly::setPointPos(unsigned int index,const QPointF& point)
 }
 
 
+Poly* Poly:: clone()
+{
+	Poly* pPloy=new Poly(m_Name);
+
+	int size=m_PointVector.size();
+	for(int i=0;i<size;++i)
+	{
+		pPloy->addPoint(m_PointVector[i]);
+	}
+	return pPloy;
+
+}
+
+
 };
