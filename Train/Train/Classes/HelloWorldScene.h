@@ -47,6 +47,8 @@ private:
 
 	Train*    m_pTrain;
 
+	cocos2d::CCTMXTiledMap *m_pMap;
+
 
 };
 

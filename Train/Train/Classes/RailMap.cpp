@@ -24,12 +24,15 @@ RailMap::~RailMap()
 	destroyAllRailLine();
 }
 
-bool RailMap::addRailLine(const std::string& name,const IG::LineSegment2D& line)
+RailLine* RailMap::addRailLine(const std::string& name,const IG::LineSegment2D& line)
 {
 	if(getRailLineByName(name)!=NULL)
-		return false;
+		return NULL;
 
      RailLine* pRailLine=new RailLine(name,line);
+	// pRailLine->init
+	// pRailLine->retain();
+	// pRailLine->autorelease();
 
 	 IG::Vector2 HeadPoint,TrailPoint;
 	 pRailLine->getHeadPoint(HeadPoint);
@@ -66,16 +69,16 @@ bool RailMap::addRailLine(const std::string& name,const IG::LineSegment2D& line)
 	 m_RailLineVector.push_back(pRailLine);
 
 
-	return true;
+	return pRailLine;
 
 }
 
-bool RailMap::addRailLine(const std::string& name,const IG::Vector2& headPoint,const IG::Vector2&trailPoint)
+RailLine* RailMap::addRailLine(const std::string& name,const IG::Vector2& headPoint,const IG::Vector2&trailPoint)
 {
 
 
 	if(getRailLineByName(name)!=NULL)
-		return false;
+		return NULL;
 
 	RailLine* pRailLine=new RailLine(name,headPoint,trailPoint);
 	m_pLayer->addChild(pRailLine);
@@ -109,7 +112,7 @@ bool RailMap::addRailLine(const std::string& name,const IG::Vector2& headPoint,c
 	 m_RailLineVector.push_back(pRailLine);
 
 
-	return true;
+	return pRailLine;
 
 }
 
@@ -153,4 +156,10 @@ bool  RailMap::isInConectArea(const IG::Vector2& point1,const IG::Vector2& point
 		return true;
 
 	return false;
+}
+
+void RailMap::setViewPoint(const cocos2d::CCPoint& point)
+{
+
+
 }

@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="10" height="5" tilewidth="64" tileheight="64">
+<map version="1.0" orientation="orthogonal" width="10" height="6" tilewidth="64" tileheight="64">
  <tileset firstgid="1" name="TransType" tilewidth="64" tileheight="64">
   <image source="TransType.png" width="384" height="256"/>
  </tileset>
  <tileset firstgid="25" name="HelloWorld" tilewidth="64" tileheight="64">
   <image source="HelloWorld.png" width="480" height="320"/>
  </tileset>
- <layer name="BackGround" width="10" height="5">
+ <layer name="BackGround" width="10" height="6">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC2NgIA6wQzEjEDMBMTMQswAxKxCzIckjYw4g5gRiLiDmBmIeJDlqAwAibhHvyAAAAA==
+   H4sIAAAAAAAAC2NgIA6wQzEjEDMBMTMQswAxKxCzIckjYw4g5gRiLiDmBmIeJLmBAgAAetZy8AAAAA==
   </data>
  </layer>
- <objectgroup name="TrainsType" width="10" height="5">
-  <object name="startLine" x="0" y="0">
+ <objectgroup name="TrainsType" width="10" height="6">
+  <object x="1" y="0">
    <properties>
-    <property name="path" value="-1 92 127 92"/>
-   </properties>
-  </object>
-  <object x="1" y="1">
-   <properties>
-    <property name="path" value="128 91 509 90"/>
+    <property name="path" value="0 382 65 320 127 382 191 323 254 380 318 320 382 383 447 319 511 383 576 322 638 381"/>
    </properties>
   </object>
   <object x="0" y="0">
    <properties>
-    <property name="path" value="437 -30"/>
+    <property name="path" value="-1 95 129 95"/>
    </properties>
   </object>
   <object x="0" y="0">
    <properties>
-    <property name="path" value="128 92 191 107 232 127 269 144 297 155 318 157"/>
+    <property name="path" value="130 94 171 99 195 109 221 121 249 133 273 147 289 153 304 157 320 158"/>
    </properties>
   </object>
   <object x="0" y="0">
    <properties>
-    <property name="path" value="1 158 320 158"/>
+    <property name="path" value="129 94 513 95"/>
    </properties>
   </object>
   <object x="0" y="0">
    <properties>
-    <property name="path" value="319 157 640 158"/>
+    <property name="path" value="514 95 641 94"/>
    </properties>
   </object>
   <object x="0" y="0">
    <properties>
-    <property name="path" value="320 156 368 145 448 107 510 92"/>
+    <property name="path" value="321 158 354 151 374 141 385 133 427 116 459 104 470 101 509 96"/>
    </properties>
   </object>
   <object x="0" y="0">
    <properties>
-    <property name="path" value="511 91 640 91"/>
+    <property name="path" value="320 157 641 158"/>
+   </properties>
+  </object>
+  <object x="0" y="0">
+   <properties>
+    <property name="path" value="321 156 2 156"/>
    </properties>
   </object>
  </objectgroup>

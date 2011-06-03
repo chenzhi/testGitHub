@@ -4,7 +4,7 @@
 #include "IGTools.h"
 
 Train::Train(cocos2d::CCLayer* pLayer)
-:m_pSprite(NULL),m_pCurrentRailLine(NULL),m_LinePercent(0.0)
+:m_pSprite(NULL),m_pCurrentRailLine(NULL),m_LinePercent(0.0),m_State(NONE)
 {
 	m_pSprite=new cocos2d::CCSprite();
 	m_pSprite->initWithFile("CloseNormal.png");
@@ -14,12 +14,17 @@ Train::Train(cocos2d::CCLayer* pLayer)
 
 	pLayer->addChild(m_pSprite);
 
+	cocos2d::CCTouchDispatcher::sharedDispatcher()->addTargetedDelegate(this,0,true);
+
+
+
 }
 
 
 Train::~Train()
 {
 
+	cocos2d::CCTouchDispatcher::sharedDispatcher()->removeDelegate(this);
 	if(m_pSprite!=NULL)
 	{
 		delete m_pSprite;
@@ -37,29 +42,53 @@ void Train::setPosition(const cocos2d::CCPoint& point)
 	{
 		m_pSprite->setPosition(point);
 	}
-	
-	
 
+}
+cocos2d::CCPoint Train::getPosition()const
+{
+	assert(m_pSprite);
+	return 	m_pSprite->getPosition();
 }
 
 void  Train::update(float time)
 {
+
+	if(m_State==NONE)
+		return ;
+
 	if(m_pCurrentRailLine==NULL)
 		return ;
 
-	m_LinePercent+=0.0005f;
-	if(m_LinePercent>1.0f)
+	static bool b=true;
+
+
+	m_LinePercent+=b?0.005f:-0.005f;
+	if(m_LinePercent>1.0f||m_LinePercent<0.0f)
 	{
-		m_LinePercent=0.0f;
-		RailLine* pTemLine=m_pCurrentRailLine->getOpenTrailLine();
-	   	if(pTemLine==NULL)
-		{
-			m_pCurrentRailLine=m_pCurrentRailLine->getOpenHeadLine();
-		}else
-		{
-			m_pCurrentRailLine=pTemLine;
-		}
+		b=!b;
+
+		//m_LinePercent=0.0f;
+		//RailLine* pTemLine=m_pCurrentRailLine->getOpenTrailLine();
+	 //  	if(pTemLine==NULL)
+		//{
+		//	RailLine* pHeadLine=m_pCurrentRailLine->getOpenHeadLine();
+		//	if(pHeadLine!=NULL)
+		//	{
+		//		pTemLine=pHeadLine;
+		//	}else
+		//	{
+		//		b=!b;
+		//	}
+		//}else
+		//{
+		//	m_pCurrentRailLine=pTemLine;
+		//}
+
+
 		return ;
+	}else
+	{
+
 	}
 
 	IG::Vector2 TemPoint,beforePoint,afterPoint;
@@ -104,5 +133,36 @@ void Train::updateOrientate(const IG::Vector2& p0,const IG::Vector2& p1)
 
 
 
+
+}
+
+//-------------------------------------------------------------------
+bool Train::containsTouchLocation(cocos2d::CCTouch* touch)
+{
+
+
+
+	return true;
+}
+
+//-------------------------------------------------------------------
+bool Train::ccTouchBegan(cocos2d::CCTouch* touch, cocos2d::CCEvent* event)
+{
+
+	cocos2d::CCPoint point=touch->locationInView(touch->view());
+	point=cocos2d::CCDirector::sharedDirector()->convertToGL( point );
+	::printf("x:%d,,y:%d \n",&point.x,&point.y);
+	return true;
+}
+
+//-------------------------------------------------------------------
+void Train::ccTouchMoved(cocos2d::CCTouch* touch, cocos2d::CCEvent* event)
+{
+	return ;
+}
+
+//-------------------------------------------------------------------
+void Train::ccTouchEnded(cocos2d::CCTouch* touch, cocos2d::CCEvent* event)
+{
 
 }

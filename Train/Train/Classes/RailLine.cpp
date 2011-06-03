@@ -215,24 +215,36 @@ void RailLine::turnTrailLine()
 void RailLine::draw(void)
 {
 
-	if(isBreak())
-		return ;
+	//if(isBreak())
+	//	return ;
 	int PointCount=m_LineSegment.getPointCount();
 	if(PointCount==0)
 		return ;
 	
+	//glPushMatrix();
+
+
+
+
+
 
 	glDisable(GL_TEXTURE_2D);
+	
 	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
 	//glDisableClientState(GL_COLOR_ARRAY);
 
-	glColor4f(0.0f,1.1f,0.0f,1.0f);
+	glDisable(GL_COLOR_ARRAY);
+	glColor4f(0.0f,1.0f,0.0f,1.0f);
 	glVertexPointer(2, GL_FLOAT, 0,&(m_LineSegment.getPointList()[0]));	
 	glDrawArrays(GL_LINE_STRIP, 0,PointCount);
 
 	//glEnableClientState(GL_COLOR_ARRAY);
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 	glEnable(GL_TEXTURE_2D);
+	glEnable(GL_COLOR_ARRAY);
+
+
+	//glPopMatrix();
 
 	return ;
 

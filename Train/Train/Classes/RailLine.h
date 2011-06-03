@@ -27,7 +27,7 @@ protected:
 
 	RailLine(const std::string& name,const IG::Vector2& head ,const IG::Vector2& trail );
 
-	~RailLine();
+	virtual ~RailLine();
 
 	void addPoint(const IG::Vector2& point);
 

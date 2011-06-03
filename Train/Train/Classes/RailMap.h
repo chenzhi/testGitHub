@@ -16,11 +16,11 @@ public:
 	~RailMap();
 
 
-	bool addRailLine(const std::string& name,const IG::LineSegment2D& line);
+	RailLine* addRailLine(const std::string& name,const IG::LineSegment2D& line);
 
 	/**在地图里加入一个新的线段，线段会自动查找以有线段。通过判断头尾点的位置自动连接
 	*/
-	bool addRailLine(const std::string& name,const IG::Vector2& headPoint,const IG::Vector2&trailPoint); 
+	RailLine* addRailLine(const std::string& name,const IG::Vector2& headPoint,const IG::Vector2&trailPoint); 
 
 
 	unsigned int getRailLineCount()const {return m_RailLineVector.size();}
@@ -39,6 +39,9 @@ public:
 	/**判断两个点是否在联接的误差范围以内 */
 	static bool   isInConectArea(const IG::Vector2& point1,const IG::Vector2& point2);
 
+
+	/**/
+	void          setViewPoint(const cocos2d::CCPoint& point);
 
 protected:
 

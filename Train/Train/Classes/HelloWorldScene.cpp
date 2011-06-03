@@ -50,17 +50,21 @@ bool HelloWorld::init()
 	CCLayer::init();
     bool bRet = true;
   
+	this->setIsTouchEnabled(true);
 
-	CCTMXTiledMap *pMap=CCTMXTiledMap::tiledMapWithTMXFile("TrainType.tmx");
-	if(pMap==NULL)
+	m_pMap=CCTMXTiledMap::tiledMapWithTMXFile("TrainType.tmx");
+	if(m_pMap==NULL)
 		return false;
 
-	initLineMap(pMap);
+
+	initRailManger();
+
+	initLineMap(m_pMap);
 
 
 
 
-	CCTMXLayer* pLayerBack=pMap->layerNamed("BackGround");
+	CCTMXLayer* pLayerBack=m_pMap->layerNamed("BackGround");
 	if(pLayerBack!=NULL)
 	{
 		CCTMXTilesetInfo* pTitlesInofo=pLayerBack->getTileSet();
@@ -105,7 +109,7 @@ bool HelloWorld::init()
 
 	}
 
-	CCTMXObjectGroup* pTrainTypeGroup=pMap->groupNamed("TrainsType");
+	CCTMXObjectGroup* pTrainTypeGroup=m_pMap->groupNamed("TrainsType");
 	if(pTrainTypeGroup!=NULL)
 	{
 
@@ -180,10 +184,10 @@ bool HelloWorld::init()
 
 
 
-	this->addChild(pMap);
+	this->addChild(m_pMap);
 
 
-	initRailManger();
+
 
 
     return bRet;
@@ -197,24 +201,20 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
 
 
 void HelloWorld::initRailManger()
-{	m_pRailMap=new RailMap(this);
+{	
+	m_pRailMap=new RailMap(this);
 
-   m_pTrain = new Train(this);
+    m_pTrain = new Train(this);
 
-	//m_pRailMap->addRailLine("first",IG::Vector2(0.0f,200.0f),IG::Vector2(100.0f,200));
-
-   IG::LineSegment2D line;
-   line.addPoint(IG::Vector2(0.0f,200.0f));
-   line.addPoint(IG::Vector2(100.0f,200.0f));
-   line.addPoint(IG::Vector2(200.0f,300.0f));
-   line.addPoint(IG::Vector2(300.0f,0.0f));
-
-   m_pRailMap->addRailLine("second",line);
-
-
-	RailLine* pLine=m_pRailMap->getRailLineByName("second");
-	pLine->setBreak(false);
-	m_pTrain->setCurrentRailLine(pLine);
+ //  IG::LineSegment2D line;
+ //  line.addPoint(IG::Vector2(0.0f,200.0f));
+ //  line.addPoint(IG::Vector2(100.0f,200.0f));
+ //  line.addPoint(IG::Vector2(200.0f,300.0f));
+ //  line.addPoint(IG::Vector2(300.0f,0.0f));
+ //  m_pRailMap->addRailLine("second",line);
+ //  RailLine* pLine=m_pRailMap->getRailLineByName("second");
+	//pLine->setBreak(false);
+	//m_pTrain->setCurrentRailLine(pLine);
 	this->schedule((SEL_SCHEDULE)&HelloWorld::update);
 
 	return ;
@@ -243,6 +243,24 @@ void  HelloWorld::update(cocos2d::ccTime dt)
 	if(m_pTrain!=NULL)
 		m_pTrain->update(dt);
 
+
+	cocos2d::CCPoint point=m_pTrain->getPosition();
+    float x=point.x-160;
+
+	int titleHight=m_pMap->getMapSize().height;
+	int titleNumber=m_pMap->getTileSize().height;	
+
+	if(x<0||x>titleHight*titleNumber-160)
+		return ;
+
+
+	cocos2d::CCTMXLayer* pLayer=m_pMap->layerNamed("BackGround");
+
+    this->setPosition(cocos2d::CCPoint(-x,0));
+
+	return ;
+
+
 }
 
 ///初始化所有的线信息
@@ -250,6 +268,11 @@ void  HelloWorld::initLineMap(cocos2d::CCTMXTiledMap* pMap)
 {
 	if(pMap==NULL)
 		return ;
+
+	int mapHeight=pMap->getMapSize().height;
+	int titleHeight=pMap->getTileSize().height;
+
+	int height=cocos2d::CCDirector::sharedDirector()->getWinSize().height;
 
 
 	CCTMXObjectGroup* pTrainTypeGroup=pMap->groupNamed("TrainsType");
@@ -265,32 +288,48 @@ void  HelloWorld::initLineMap(cocos2d::CCTMXTiledMap* pMap)
 			if(pDic!=NULL)
 			{
 
-				std::string	key;
-				CCString* pValue;
-				pDic->begin();
-				pValue=pDic->next(&key);
-				while(pValue!=NULL)
+				static int lineindex=0;
+				CCString*pstrValue=pDic->objectForKey("path");
+				if(pstrValue==NULL)
+					continue;
+
+				CCString* pX=pDic->objectForKey("x");
+				CCString* pY=pDic->objectForKey("y");
+
+
+
+				std::string v=pstrValue->m_sString;
+
+				std::vector<std::string> pointList=IG::StringUtil::split(v," ");
+
+				IG::LineSegment2D temLine;
+				int pointSize=pointList.size()/2;
+				for(int j=0;j<pointSize;++j)
 				{
-					CCString*pstrValue=pDic->objectForKey("path");
+					int x=0,y=0;
+					x=IG::StringUtil::parseInt(pointList[2*j]);
+					y=IG::StringUtil::parseInt(pointList[2*j+1]);
+					x+=pX->toInt();	
+					//y+=pY->toInt();
 
-					std::string v=pstrValue->m_sString;
-
-					std::vector<std::string> pointList=IG::StringUtil::split(v," ");
-
-					int pointSize=pointList.size()/2;
-					for(int j=0;j<pointSize;++j)
-					{
-						int x=0,y=0;
-						x=IG::StringUtil::parseInt(pointList[2*j]);
-						y=IG::StringUtil::parseInt(pointList[2*j+1]);
-						CCPoint point(x,y);
-
-					}
-
-					pValue=pDic->next(&key);
+					y=mapHeight*titleHeight-y;
+					y+=pY->toInt()-mapHeight*titleHeight;
+					IG::Vector2 pos(x,y);
+					temLine.addPoint(pos);
 
 				}
 
+				char temlineName[256];
+				_snprintf(temlineName,256,"line_%d",lineindex);
+				RailLine* pLine= m_pRailMap->addRailLine(temlineName,temLine);
+
+				if(lineindex==0&&pLine!=NULL)
+				{
+					m_pTrain->setCurrentRailLine(pLine);
+				}
+
+
+				lineindex++;
 			}
 
 
